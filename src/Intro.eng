@@ -1,3 +1,4 @@
+How to play...
 Minesweeper is a game where mines are hidden somewhere in the shown field.
 Before you choose a box, you need to have the right mode on. It's either a 'safe click' or 'mark a mine'.
 You can undo a mark of mine by choosing it again with 'mark a mine' mode
@@ -21,3 +22,4 @@ In this case we can tell, that box 10 is definitely safe. Because of - next to i
 We mark mines with 🚩 and if you click on a mine it explodes 💥.
 
 The goal in this game is to find all the mines and not to trigger one.
+Good luck!😊

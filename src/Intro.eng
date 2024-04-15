@@ -1,0 +1,23 @@
+Minesweeper is a game where mines are hidden somewhere in the shown field.
+Before you choose a box, you need to have the right mode on. It's either a 'safe click' or 'mark a mine'.
+You can undo a mark of mine by choosing it again with 'mark a mine' mode
+First we write rows then columns. So first the number on the left the the upper numbers.
+If there's a number, it shows how many mines are around the number. For example:
+
+            0 1 2
+         0  X X X
+         1  X 1 X
+         2  X X X
+
+ In this field there are 8 hidden boxes where could be a mine.
+If there's a -. It means there are no mines around.
+
+            0 1 2
+         0  X X X
+         1  X 1 -
+         2  - - -
+
+In this case we can tell, that box 10 is definitely safe. Because of - next to it.
+We mark mines with 🚩 and if you click on a mine it explodes 💥.
+
+The goal in this game is to find all the mines and not to trigger one.

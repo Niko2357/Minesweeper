@@ -22,7 +22,8 @@ public class Intro {
             switch (choice) {
                 case 1:
                     Game game = new Game();
-                    // game.playGame();
+                    game.playGame();
+                    break;
                 case 2:
                     try (BufferedReader reader = new BufferedReader(new FileReader("src//Intro.eng"))) {
                         String line;
@@ -32,9 +33,11 @@ public class Intro {
                     } catch (IOException e) {
                         System.out.println("Something went wrong.");
                     }
+                    break;
                 case 3:
                     // History history = new History();
                     // history.account();
+                    break;
                 case 4:
                     System.out.println("Bye bye!");
                     break;

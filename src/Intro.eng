@@ -1,7 +1,8 @@
 How to play...
 Minesweeper is a game where mines are hidden somewhere in the shown field.
-Before you choose a box, you need to have the right mode on. It's either a 'safe click' or 'mark a mine'.
-You can undo a mark of mine by choosing it again with 'mark a mine' mode
+Every move you do you have to write a location and if you want to mark it with a flag or show the number.
+Simply by writing 2 1 s (2 row, column 1, show place - you think there's no mine),
+or 2 1 f (2 row, column 1, mark place - you place a flag where you think the mine is).
 First we write rows then columns. So first the number on the left the the upper numbers.
 If there's a number, it shows how many mines are around the number. For example:
 

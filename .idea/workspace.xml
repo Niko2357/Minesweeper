@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="04495222-66f1-4158-b315-49bb017cfa54" name="Changes" comment="changed text">
-      <change afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Wii Theme.mp3" afterDir="false" />
+    <list default="true" id="04495222-66f1-4158-b315-49bb017cfa54" name="Changes" comment="new methods showBox, canSee and checkExistenceofBox, also some small edits">
+      <change afterPath="$PROJECT_DIR$/src/Location.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Intro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Intro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,28 +37,13 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/Nikolka_skola/Programování/Java/MInesweeper/src"
+    "last_opened_file_path": "D:/Nikolka_skola/Programování/Java/MInesweeper"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Nikolka_skola\Programování\Java\MInesweeper\src" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="Minesweeper" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="Minesweeper" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -119,7 +103,49 @@
       <option name="project" value="LOCAL" />
       <updated>1713180568197</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="edit of method menu">
+      <created>1713187959530</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1713187959530</updated>
+    </task>
+    <task id="LOCAL-00009" summary="added mp3 file">
+      <created>1713187983973</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1713187983973</updated>
+    </task>
+    <task id="LOCAL-00010" summary="trying out code">
+      <created>1713187998902</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1713187998902</updated>
+    </task>
+    <task id="LOCAL-00011" summary="method playGame">
+      <created>1713188027870</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1713188027870</updated>
+    </task>
+    <task id="LOCAL-00012" summary="new class Box representing one number or cell on board">
+      <created>1714509108506</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1714509108506</updated>
+    </task>
+    <task id="LOCAL-00013" summary="new methods showBox, canSee and checkExistenceofBox, also some small edits">
+      <created>1714509410467</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1714509410467</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -141,6 +167,12 @@
     <MESSAGE value="Minor change in text" />
     <MESSAGE value="Class Intro prints out 'menu' of the game" />
     <MESSAGE value="changed text" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed text" />
+    <MESSAGE value="edit of method menu" />
+    <MESSAGE value="added mp3 file" />
+    <MESSAGE value="trying out code" />
+    <MESSAGE value="method playGame" />
+    <MESSAGE value="new class Box representing one number or cell on board" />
+    <MESSAGE value="new methods showBox, canSee and checkExistenceofBox, also some small edits" />
+    <option name="LAST_COMMIT_MESSAGE" value="new methods showBox, canSee and checkExistenceofBox, also some small edits" />
   </component>
 </project>

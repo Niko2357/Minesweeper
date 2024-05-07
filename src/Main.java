@@ -5,5 +5,7 @@ public class Main {
 
         Game game = new Game();
         game.playGame();
+
+        Window win = new Window();
     }
 }

@@ -6,7 +6,7 @@ public class Menu extends JFrame implements ActionListener {
 
     JButton button;
 
-    Window(){
+    Menu(){
         JButton button = new JButton();
         button.setBounds(200, 100, 100, 50);
         button.setText("Menu");

@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="04495222-66f1-4158-b315-49bb017cfa54" name="Changes" comment="trying out">
+    <list default="true" id="04495222-66f1-4158-b315-49bb017cfa54" name="Changes" comment="fixed method revealEmpty so that it works, added javadocs to all methods">
+      <change afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,17 +32,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/Nikolka_skola/Programování/Java/Minesweeper"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Nikolka_skola/Programování/Java/Minesweeper&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Nikolka_skola\Programování\Java\MInesweeper\src" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Minesweeper" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -163,7 +179,42 @@
       <option name="project" value="LOCAL" />
       <updated>1714509756963</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="trying out">
+      <created>1715110285097</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1715110285097</updated>
+    </task>
+    <task id="LOCAL-00018" summary="new class Window">
+      <created>1715110311716</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1715110311716</updated>
+    </task>
+    <task id="LOCAL-00019" summary="new class Visual making window version of minesweeper">
+      <created>1715608633243</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1715608633243</updated>
+    </task>
+    <task id="LOCAL-00020" summary="added options of two game modes(console and window version)">
+      <created>1716713180769</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1716713180769</updated>
+    </task>
+    <task id="LOCAL-00021" summary="fixed method revealEmpty so that it works, added javadocs to all methods">
+      <created>1716714651536</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1716714651536</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -194,6 +245,10 @@
     <MESSAGE value="new methods locExists, inLocate" />
     <MESSAGE value="new class Location simplifies one box/location/position" />
     <MESSAGE value="trying out" />
-    <option name="LAST_COMMIT_MESSAGE" value="trying out" />
+    <MESSAGE value="new class Window" />
+    <MESSAGE value="new class Visual making window version of minesweeper" />
+    <MESSAGE value="added options of two game modes(console and window version)" />
+    <MESSAGE value="fixed method revealEmpty so that it works, added javadocs to all methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed method revealEmpty so that it works, added javadocs to all methods" />
   </component>
 </project>

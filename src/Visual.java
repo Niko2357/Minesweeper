@@ -17,7 +17,7 @@ public class Visual extends JFrame {
         setSize(1000, 1000);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new GridLayout(SIZE, SIZE));
-
+        setLocationRelativeTo(null);
 
         buttons = new JButton[SIZE][SIZE];
         mines = new boolean[SIZE][SIZE];
@@ -27,6 +27,9 @@ public class Visual extends JFrame {
         setVisible(true);
     }
 
+    /**
+     * Builds the board of this game with buttons.
+     */
     public void makeButtons() {
         for (int i = 0; i < SIZE; i++) {
             for (int j = 0; j < SIZE; j++) {
@@ -40,6 +43,9 @@ public class Visual extends JFrame {
         }
     }
 
+    /**
+     * Places mines on playing board.
+     */
     public void placeMine() {
         Random rnd = new Random();
         int placed = 0;
@@ -53,6 +59,9 @@ public class Visual extends JFrame {
         }
     }
 
+    /**
+     * Reveals all mines on playing field.
+     */
     public void revealM() {
         for (int i = 0; i < SIZE; i++) {
             for (int j = 0; j < SIZE; j++) {
@@ -63,13 +72,19 @@ public class Visual extends JFrame {
         }
     }
 
+    /**
+     * This method counts number of mines around one box so that the bow can have number of mines displayed on it.
+     * @param row    height, location of the box
+     * @param column  width, location of the box
+     * @return  number of mines around one box
+     */
     public int count(int row, int column) {
         int count = 0;
-        for (int dr = -1; dr <= 1; dr++) {
-            for (int dc = -1; dc <= 1; dc++) {
-                int nr = row + dr;
-                int nc = column + dc;
-                if (nr >= 0 && nr < SIZE && nc >= 0 && nc < SIZE && mines[nr][nc]) {
+        for (int i = -1; i <= 1; i++) {
+            for (int j = -1; j <= 1; j++) {
+                int theRow = row + i;
+                int theColumn = column + j;
+                if (theRow >= 0 && theRow < SIZE && theColumn >= 0 && theColumn < SIZE && mines[theRow][theColumn]) {
                     count++;
                 }
             }
@@ -79,24 +94,31 @@ public class Visual extends JFrame {
 
     private class ButtonWorks implements ActionListener {
         private int row;
-        private int col;
+        private int column;
 
-        public ButtonWorks(int row, int col) {
+
+        public ButtonWorks(int row, int column) {
             this.row = row;
-            this.col = col;
+            this.column = column;
         }
 
+        /**
+         * Gets information from the cell. If the cell hides mine, all mines are revealed and game ends.
+         * Otherwise, the game continues.
+         * @param e the event to be processed
+         */
         @Override
         public void actionPerformed(ActionEvent e) {
             JButton button = (JButton) e.getSource();
 
-            if (mines[row][col]) {
+            if (mines[row][column]) {
                 button.setText("X");
                 revealM();
                 JOptionPane.showMessageDialog(Visual.this, "Game Over!");
                 System.exit(0);
             } else {
-                int count = count(row, col);
+                revealEmpty(row, column);
+                int count = count(row, column);
                 if (count > 0) {
                     button.setText(String.valueOf(count));
                 } else {
@@ -107,5 +129,28 @@ public class Visual extends JFrame {
             button.setEnabled(false);
         }
 
+        /**
+         * Reveals all empty box. By empty meaning with no number on them. Having no mines around them.
+         * @param row height of cell
+         * @param column width of cell
+         */
+        public void revealEmpty(int row, int column){
+            if (row < 0 || row >= SIZE || column < 0 || column >= SIZE || !buttons[row][column].isEnabled())
+                return;
+
+            int count = count(row, column);
+            if (count > 0) {
+                buttons[row][column].setText(String.valueOf(count));
+                buttons[row][column].setEnabled(false);
+                return;
+            }
+
+            buttons[row][column].setEnabled(false);
+            for (int theRow = -1; theRow <= 1; theRow++) {
+                for (int theColumn = -1; theColumn <= 1; theColumn++) {
+                    revealEmpty(row + theRow, column + theColumn);
+                }
+            }
+        }
     }
 }

@@ -9,10 +9,11 @@ public class Intro {
         int choice;
         do {
             System.out.println("Welcome to MineSweeper game");
-            System.out.println("1)  Play");
-            System.out.println("2)  How to play");
-            System.out.println("3)  Sign in");
-            System.out.println("4)  Quit");
+            System.out.println("1)  Play console version");
+            System.out.println("2)  Play window version");
+            System.out.println("3)  How to play");
+            System.out.println("4)  Sign in");
+            System.out.println("5)  Quit");
             System.out.println("  ");
             System.out.println("Choose:");
 
@@ -25,6 +26,9 @@ public class Intro {
                     game.playGame();
                     break;
                 case 2:
+                    Visual vis = new Visual();
+                    break;
+                case 3:
                     try (BufferedReader reader = new BufferedReader(new FileReader("src//Intro.eng"))) {
                         String line;
                         while ((line = reader.readLine()) != null) {
@@ -34,17 +38,17 @@ public class Intro {
                         System.out.println("Something went wrong.");
                     }
                     break;
-                case 3:
+                case 4:
                     // History history = new History();
                     // history.account();
                     break;
-                case 4:
+                case 5:
                     System.out.println("Bye bye!");
                     break;
                 default:
                     System.out.println("Wrong choice. Choose again.");
             }
-        }while(choice != 4);
+        }while(choice != 5);
     }
 
 

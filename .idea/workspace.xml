@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="04495222-66f1-4158-b315-49bb017cfa54" name="Changes" comment="fixed integer revealedCells">
+    <list default="true" id="04495222-66f1-4158-b315-49bb017cfa54" name="Changes" comment="trying out">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ButtonWorks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ButtonWorks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Visual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Visual.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -257,7 +254,28 @@
       <option name="project" value="LOCAL" />
       <updated>1716832332225</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="fixed winning message">
+      <created>1716833972539</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1716833972539</updated>
+    </task>
+    <task id="LOCAL-00029" summary="deleting temporary help of printing">
+      <created>1716834011133</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1716834011133</updated>
+    </task>
+    <task id="LOCAL-00030" summary="trying out">
+      <created>1716834043301</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1716834043301</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -272,8 +290,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="new project Minesweeper" />
-    <MESSAGE value="new Class user, 'user account'" />
     <MESSAGE value="File with instructions how to play MineSweeper" />
     <MESSAGE value="Minor change in text" />
     <MESSAGE value="Class Intro prints out 'menu' of the game" />
@@ -286,7 +302,6 @@
     <MESSAGE value="new methods showBox, canSee and checkExistenceofBox, also some small edits" />
     <MESSAGE value="new methods locExists, inLocate" />
     <MESSAGE value="new class Location simplifies one box/location/position" />
-    <MESSAGE value="trying out" />
     <MESSAGE value="new class Window" />
     <MESSAGE value="new class Visual making window version of minesweeper" />
     <MESSAGE value="added options of two game modes(console and window version)" />
@@ -297,6 +312,9 @@
     <MESSAGE value="removed class ButtonWorks elsewhere and added bar with switching modes for marking mines" />
     <MESSAGE value="replaced new ActionListener with lambda, added methods winCheck and win" />
     <MESSAGE value="fixed integer revealedCells" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed integer revealedCells" />
+    <MESSAGE value="fixed winning message" />
+    <MESSAGE value="deleting temporary help of printing" />
+    <MESSAGE value="trying out" />
+    <option name="LAST_COMMIT_MESSAGE" value="trying out" />
   </component>
 </project>

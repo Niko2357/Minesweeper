@@ -22,6 +22,7 @@ public class Solver {
                     if(buttons[i][j].getText().equals("")){
                         int closeMines = countCloseM(i, j);
                         int closeFlags = countCloseF(i, j);
+                        int closeHidden = countHidden(i, j);
                     }
                 }
             }
@@ -60,6 +61,19 @@ public class Solver {
         return count;
    }
 
+    public int countHidden(int row, int column) {
+        int count = 0;
+        for (int i = -1; i <= 1; i++) {
+            for (int j = -1; j <= 1; j++) {
+                int r = row + i;
+                int c = column + j;
+                if (r >= 0 && c >= 0 && r < rows && c < columns && buttons[r][c].getText().equals("")) {
+                    count++;
+                }
+            }
+        }
+        return count;
+    }
 
 
 }

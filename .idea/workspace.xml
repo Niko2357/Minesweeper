@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="04495222-66f1-4158-b315-49bb017cfa54" name="Changes" comment="removed class ButtonWorks elsewhere and added bar with switching modes for marking mines">
+    <list default="true" id="04495222-66f1-4158-b315-49bb017cfa54" name="Changes" comment="fixed integer revealedCells">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ButtonWorks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ButtonWorks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
@@ -243,7 +243,21 @@
       <option name="project" value="LOCAL" />
       <updated>1716750562832</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="replaced new ActionListener with lambda, added methods winCheck and win">
+      <created>1716829903103</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1716829903103</updated>
+    </task>
+    <task id="LOCAL-00027" summary="fixed integer revealedCells">
+      <created>1716832332225</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1716832332225</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -258,7 +272,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="new class Field with methods make field, printOut and constructor" />
     <MESSAGE value="new project Minesweeper" />
     <MESSAGE value="new Class user, 'user account'" />
     <MESSAGE value="File with instructions how to play MineSweeper" />
@@ -282,6 +295,8 @@
     <MESSAGE value="fixed a constructor" />
     <MESSAGE value="private class from Visual remade as sole class" />
     <MESSAGE value="removed class ButtonWorks elsewhere and added bar with switching modes for marking mines" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed class ButtonWorks elsewhere and added bar with switching modes for marking mines" />
+    <MESSAGE value="replaced new ActionListener with lambda, added methods winCheck and win" />
+    <MESSAGE value="fixed integer revealedCells" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed integer revealedCells" />
   </component>
 </project>

@@ -1,10 +1,6 @@
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.util.Random;
-
-import static javax.swing.JColorChooser.showDialog;
 
 public class Visual extends JFrame {
 
@@ -117,7 +113,7 @@ public class Visual extends JFrame {
      * @param column width of cell
      */
     public void revealEmpty(int row, int column){
-        if (row < 0 || row >= SIZE || column < 0 || column >= SIZE || !buttons[row][column].isEnabled())
+        if (row < 0 || row >= SIZE || column < 0 || column >= SIZE || !buttons[row][column].isEnabled() || "F".equals(buttons[row][column].getText()))
             return;
 
         int count = count(row, column);
@@ -141,6 +137,8 @@ public class Visual extends JFrame {
      * This method checks whether player won. Player can achieve that by he marks all mines and reveals all cells.
      */
     public void winCheck(){
+        System.out.println(foundMines);
+        System.out.println(revealedCells);
         if(foundMines == MINES && revealedCells == (SIZE*SIZE-MINES)){
             JOptionPane.showMessageDialog(this, "Winner!!!");
             win();

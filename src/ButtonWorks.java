@@ -25,8 +25,14 @@ public class ButtonWorks implements ActionListener {
         if(visual.flagMode) {
             if ("F".equals(button.getText())) {
                 button.setText("");
+                if(visual.mines[row][column]){
+                    visual.foundMines--;
+                }
             } else {
                 button.setText("F");
+                if(visual.mines[row][column]){
+                    visual.foundMines++;
+                }
             }
         }else {
             if (visual.mines[row][column]) {
@@ -39,6 +45,7 @@ public class ButtonWorks implements ActionListener {
                 int count = visual.count(row, column);
                 if (count > 0) {
                     button.setText(String.valueOf(count));
+                    visual.revealedCells++;
                 } else {
                     button.setText("");
                 }
@@ -46,6 +53,7 @@ public class ButtonWorks implements ActionListener {
 
             button.setEnabled(false);
         }
+        visual.winCheck();
     }
 
 

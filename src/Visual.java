@@ -112,10 +112,11 @@ public class Visual extends JFrame {
      * @param row height of cell
      * @param column width of cell
      */
-    public void revealEmpty(int row, int column){
-        if (row < 0 || row >= SIZE || column < 0 || column >= SIZE || !buttons[row][column].isEnabled() || "F".equals(buttons[row][column].getText()))
+    public void revealEmpty(int row, int column) {
+        if (row < 0 || row >= SIZE || column < 0 || column >= SIZE || !buttons[row][column].isEnabled()  || "F".equals(buttons[row][column].getText())){
             return;
-
+    }
+        buttons[row][column].setEnabled(false);
         int count = count(row, column);
         if (count > 0) {
             buttons[row][column].setText(String.valueOf(count));
@@ -149,7 +150,7 @@ public class Visual extends JFrame {
      * Carries on the message of winning a game and leads player to the menu.
      */
     public void win(){
-        int option = JOptionPane.showOptionDialog(this, "You have won.\\n What's next?", "Winner",
+        int option = JOptionPane.showOptionDialog(this, "You have won!!!", "Winner",
                 JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE, null, new Object[]{"Play again", "Menu"}, null);
         if(option == 0){
             this.dispose();

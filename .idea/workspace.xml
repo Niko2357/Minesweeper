@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="04495222-66f1-4158-b315-49bb017cfa54" name="Changes" comment="fixed method revealEmpty so that it works, added javadocs to all methods">
-      <change afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
+    <list default="true" id="04495222-66f1-4158-b315-49bb017cfa54" name="Changes" comment="removed class ButtonWorks elsewhere and added bar with switching modes for marking mines">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ButtonWorks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ButtonWorks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Visual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Visual.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,7 +215,35 @@
       <option name="project" value="LOCAL" />
       <updated>1716714651536</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="new class replacing the old one Window">
+      <created>1716714829930</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1716714829930</updated>
+    </task>
+    <task id="LOCAL-00023" summary="fixed a constructor">
+      <created>1716714859438</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1716714859438</updated>
+    </task>
+    <task id="LOCAL-00024" summary="private class from Visual remade as sole class">
+      <created>1716750506418</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1716750506418</updated>
+    </task>
+    <task id="LOCAL-00025" summary="removed class ButtonWorks elsewhere and added bar with switching modes for marking mines">
+      <created>1716750562832</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1716750562832</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -249,6 +278,10 @@
     <MESSAGE value="new class Visual making window version of minesweeper" />
     <MESSAGE value="added options of two game modes(console and window version)" />
     <MESSAGE value="fixed method revealEmpty so that it works, added javadocs to all methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed method revealEmpty so that it works, added javadocs to all methods" />
+    <MESSAGE value="new class replacing the old one Window" />
+    <MESSAGE value="fixed a constructor" />
+    <MESSAGE value="private class from Visual remade as sole class" />
+    <MESSAGE value="removed class ButtonWorks elsewhere and added bar with switching modes for marking mines" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed class ButtonWorks elsewhere and added bar with switching modes for marking mines" />
   </component>
 </project>

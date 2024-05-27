@@ -4,6 +4,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Random;
 
+import static javax.swing.JColorChooser.showDialog;
+
 public class Visual extends JFrame {
 
     protected static final int SIZE = 10;
@@ -12,6 +14,8 @@ public class Visual extends JFrame {
     protected JButton[][] buttons;
     protected boolean[][] mines;
     protected boolean flagMode = false;
+    protected int foundMines = 0;
+    protected int revealedCells = 0;
 
     public Visual() {
         setTitle("TNT Sweeper");
@@ -25,12 +29,9 @@ public class Visual extends JFrame {
 
         JPanel mainPanel = new JPanel();
         JButton tButton = new JButton("Mode: Dig");
-        tButton.addActionListener(new ActionListener(){
-            @Override
-            public void actionPerformed(ActionEvent ac){
-                flagMode = !flagMode;
-                tButton.setText(flagMode ? "Mode: Mark" : "Mode: Dig");
-            }
+        tButton.addActionListener(ac -> {
+            flagMode = !flagMode;
+            tButton.setText(flagMode ? "Mode: Mark" : "Mode: Dig");
         });
         mainPanel.add(tButton);
         add(mainPanel, BorderLayout.NORTH);
@@ -123,14 +124,40 @@ public class Visual extends JFrame {
         if (count > 0) {
             buttons[row][column].setText(String.valueOf(count));
             buttons[row][column].setEnabled(false);
+            revealedCells++;
             return;
         }
 
         buttons[row][column].setEnabled(false);
+        revealedCells++;
         for (int theRow = -1; theRow <= 1; theRow++) {
             for (int theColumn = -1; theColumn <= 1; theColumn++) {
                 revealEmpty(row + theRow, column + theColumn);
             }
+        }
+    }
+
+    /**
+     * This method checks whether player won. Player can achieve that by he marks all mines and reveals all cells.
+     */
+    public void winCheck(){
+        if(foundMines == MINES && revealedCells == (SIZE*SIZE-MINES)){
+            JOptionPane.showMessageDialog(this, "Winner!!!");
+            win();
+        }
+    }
+
+    /**
+     * Carries on the message of winning a game and leads player to the menu.
+     */
+    public void win(){
+        int option = JOptionPane.showOptionDialog(this, "You have won.\\n What's next?", "Winner",
+                JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE, null, new Object[]{"Play again", "Menu"}, null);
+        if(option == 0){
+            this.dispose();
+            new Visual();
+        }else if(option == 1){
+            new Intro();
         }
     }
 

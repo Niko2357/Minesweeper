@@ -138,8 +138,6 @@ public class Visual extends JFrame {
      * This method checks whether player won. Player can achieve that by he marks all mines and reveals all cells.
      */
     public void winCheck(){
-        System.out.println(foundMines);
-        System.out.println(revealedCells);
         if(foundMines == MINES && revealedCells == (SIZE*SIZE-MINES)){
             JOptionPane.showMessageDialog(this, "Winner!!!");
             win();

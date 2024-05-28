@@ -12,6 +12,7 @@ public class Visual extends JFrame {
     protected boolean flagMode = false;
     protected int foundMines = 0;
     protected int revealedCells = 0;
+    protected boolean lost;
 
     public Visual() {
         setTitle("TNT Sweeper");
@@ -157,5 +158,10 @@ public class Visual extends JFrame {
             new Intro();
         }
     }
+
+    public boolean lostGame(){
+        return lost;
+    }
+
 
 }

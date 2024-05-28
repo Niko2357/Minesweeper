@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="04495222-66f1-4158-b315-49bb017cfa54" name="Changes" comment="trying out">
+    <list default="true" id="04495222-66f1-4158-b315-49bb017cfa54" name="Changes" comment="class menu, window with buttons of options">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Visual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Visual.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,13 +32,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Nikolka_skola/Programování/Java/Minesweeper&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "D:/Nikolka_skola/Programování/Java/Minesweeper",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Nikolka_skola\Programování\Java\MInesweeper\src" />
@@ -275,7 +280,63 @@
       <option name="project" value="LOCAL" />
       <updated>1716834043301</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="?">
+      <created>1716834155293</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1716834155293</updated>
+    </task>
+    <task id="LOCAL-00032" summary="new class hint">
+      <created>1716836505459</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1716836505459</updated>
+    </task>
+    <task id="LOCAL-00033" summary="new class Solver with methods solving and counting mines and flags around the cell">
+      <created>1716836595274</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1716836595274</updated>
+    </task>
+    <task id="LOCAL-00034" summary="method countHidden, count of covered cells">
+      <created>1716836727470</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1716836727470</updated>
+    </task>
+    <task id="LOCAL-00035" summary="methods revealH and revealF, they solve and show the cells">
+      <created>1716836943306</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1716836943306</updated>
+    </task>
+    <task id="LOCAL-00036" summary="new class Instructions, that loads file explaining how to play, uses separate window">
+      <created>1716908566024</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1716908566025</updated>
+    </task>
+    <task id="LOCAL-00037" summary="comments to readFile method">
+      <created>1716908690826</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1716908690826</updated>
+    </task>
+    <task id="LOCAL-00038" summary="class menu, window with buttons of options">
+      <created>1716908770453</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1716908770453</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -290,14 +351,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="File with instructions how to play MineSweeper" />
-    <MESSAGE value="Minor change in text" />
-    <MESSAGE value="Class Intro prints out 'menu' of the game" />
-    <MESSAGE value="changed text" />
-    <MESSAGE value="edit of method menu" />
-    <MESSAGE value="added mp3 file" />
-    <MESSAGE value="trying out code" />
-    <MESSAGE value="method playGame" />
     <MESSAGE value="new class Box representing one number or cell on board" />
     <MESSAGE value="new methods showBox, canSee and checkExistenceofBox, also some small edits" />
     <MESSAGE value="new methods locExists, inLocate" />
@@ -315,6 +368,14 @@
     <MESSAGE value="fixed winning message" />
     <MESSAGE value="deleting temporary help of printing" />
     <MESSAGE value="trying out" />
-    <option name="LAST_COMMIT_MESSAGE" value="trying out" />
+    <MESSAGE value="?" />
+    <MESSAGE value="new class hint" />
+    <MESSAGE value="new class Solver with methods solving and counting mines and flags around the cell" />
+    <MESSAGE value="method countHidden, count of covered cells" />
+    <MESSAGE value="methods revealH and revealF, they solve and show the cells" />
+    <MESSAGE value="new class Instructions, that loads file explaining how to play, uses separate window" />
+    <MESSAGE value="comments to readFile method" />
+    <MESSAGE value="class menu, window with buttons of options" />
+    <option name="LAST_COMMIT_MESSAGE" value="class menu, window with buttons of options" />
   </component>
 </project>

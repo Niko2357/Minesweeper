@@ -35,6 +35,11 @@ public class Instructions extends JFrame {
         setVisible(true);
     }
 
+    /**
+     * Reads a file and puts all lines together in one String.
+     * @param file Intro.eng
+     * @return whole content of a file
+     */
     public String readFile(String file){
         StringBuilder build  = new StringBuilder();
         try (BufferedReader reader = new BufferedReader(new FileReader(file))) {

@@ -1,30 +1,59 @@
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+public class Menu extends JFrame {
 
-public class Menu extends JFrame implements ActionListener {
+    public Menu() {
+        setTitle("TNT Sweeper Main Menu");
+        setSize(400, 400);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setLocationRelativeTo(null);
 
-    JButton button;
+        JPanel mainPanel = new JPanel();
+        mainPanel.setLayout(new GridLayout(4, 1, 10, 10));
 
-    Menu(){
-        JButton button = new JButton();
-        button.setBounds(200, 100, 100, 50);
-        button.setText("Menu");
+        JButton playButton = new JButton("Play");
+        JButton signInButton = new JButton("Sign In");
+        JButton howToPlayButton = new JButton("How to Play");
+        JButton quitButton = new JButton("Quit");
 
+        playButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new Visual();
+                dispose();
+            }
+        });
 
-        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setLayout(null);
-        this.setSize(1000, 1000);
-        this.setVisible(true);
-        this.add(button);
+        signInButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JOptionPane.showMessageDialog(Menu.this, "Sign In Feature Not Implemented Yet");
+            }
+        });
+
+        howToPlayButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new Instructions();
+            }
+        });
+        quitButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                System.exit(0);
+            }
+        });
+
+        mainPanel.add(playButton);
+        mainPanel.add(signInButton);
+        mainPanel.add(howToPlayButton);
+        mainPanel.add(quitButton);
+
+        add(mainPanel);
+        setVisible(true);
     }
 
 
-
-    @Override
-    public void actionPerformed(ActionEvent e) {
-        if(e.getSource() == button){
-            System.out.println("yes");
-        }
-    }
 }

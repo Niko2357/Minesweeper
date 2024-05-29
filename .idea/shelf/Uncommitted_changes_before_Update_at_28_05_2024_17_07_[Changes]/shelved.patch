@@ -1,0 +1,21 @@
+Index: src/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\r\npublic class Main {\r\n    public static void main(String[] args) {\r\n        Intro intro = new Intro();\r\n        intro.menu();\r\n\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Main.java b/src/Main.java
+--- a/src/Main.java	(revision 5564f3d241674e4ad67ebc9bf6dd3333d78d627c)
++++ b/src/Main.java	(date 1716905956823)
+@@ -2,7 +2,8 @@
+ public class Main {
+     public static void main(String[] args) {
+         Intro intro = new Intro();
+-        intro.menu();
++       // intro.menu();
++        Menu menu = new Menu();
+ 
+     }
+ }
+\ No newline at end of file

@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="04495222-66f1-4158-b315-49bb017cfa54" name="Changes" comment="disposing game window after winning">
+    <list default="true" id="04495222-66f1-4158-b315-49bb017cfa54" name="Changes" comment="plus menu bar with other buttons">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ButtonWorks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ButtonWorks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Hint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hint.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Solver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Solver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Visual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Visual.java" afterDir="false" />
     </list>
@@ -71,13 +73,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1713165154160</updated>
-    </task>
-    <task id="LOCAL-00015" summary="new class Location simplifies one box/location/position">
-      <created>1714509741419</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1714509741419</updated>
     </task>
     <task id="LOCAL-00016" summary="trying out">
       <created>1714509756963</created>
@@ -415,7 +410,14 @@
       <option name="project" value="LOCAL" />
       <updated>1717009267855</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="plus menu bar with other buttons">
+      <created>1717011069148</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1717011069148</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -430,7 +432,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="methods revealH and revealF, they solve and show the cells" />
     <MESSAGE value="new class Instructions, that loads file explaining how to play, uses separate window" />
     <MESSAGE value="comments to readFile method" />
     <MESSAGE value="class menu, window with buttons of options" />
@@ -455,6 +456,7 @@
     <MESSAGE value="deleted revealCells" />
     <MESSAGE value="disposing game window after losing" />
     <MESSAGE value="disposing game window after winning" />
-    <option name="LAST_COMMIT_MESSAGE" value="disposing game window after winning" />
+    <MESSAGE value="plus menu bar with other buttons" />
+    <option name="LAST_COMMIT_MESSAGE" value="plus menu bar with other buttons" />
   </component>
 </project>

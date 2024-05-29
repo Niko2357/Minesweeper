@@ -41,6 +41,7 @@ public class ButtonWorks implements ActionListener {
             if (visual.mines[row][column]) {
                 button.setText("X");
                 visual.revealM();
+                visual.lost = true;
                 JOptionPane.showMessageDialog(visual, "Game Over!");
                 new Menu();
                 visual.dispose();

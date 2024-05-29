@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="04495222-66f1-4158-b315-49bb017cfa54" name="Changes" comment="added another button to the menu in the menu bar, opening web page with rules of minesweeper; new method openWeb">
+    <list default="true" id="04495222-66f1-4158-b315-49bb017cfa54" name="Changes" comment="new enum class of difficulty levels in the game">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ButtonWorks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ButtonWorks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Visual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Visual.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -16,6 +14,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -380,7 +379,42 @@
       <option name="project" value="LOCAL" />
       <updated>1716993887045</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="replaced new ActionListener with lambda">
+      <created>1716994354958</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1716994354958</updated>
+    </task>
+    <task id="LOCAL-00046" summary="when you lose the main menu will appear">
+      <created>1716994392294</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1716994392294</updated>
+    </task>
+    <task id="LOCAL-00047" summary="replaced new Intro() with new Menu()">
+      <created>1716994545106</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1716994545106</updated>
+    </task>
+    <task id="LOCAL-00048" summary=".">
+      <created>1716994557324</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1716994557324</updated>
+    </task>
+    <task id="LOCAL-00049" summary="new enum class of difficulty levels in the game">
+      <created>1716995159255</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1716995159255</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -395,10 +429,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="new class Window" />
-    <MESSAGE value="new class Visual making window version of minesweeper" />
-    <MESSAGE value="added options of two game modes(console and window version)" />
-    <MESSAGE value="fixed method revealEmpty so that it works, added javadocs to all methods" />
     <MESSAGE value="new class replacing the old one Window" />
     <MESSAGE value="fixed a constructor" />
     <MESSAGE value="private class from Visual remade as sole class" />
@@ -418,8 +448,12 @@
     <MESSAGE value="class menu, window with buttons of options" />
     <MESSAGE value="method lostGame for help" />
     <MESSAGE value="main" />
-    <MESSAGE value="." />
     <MESSAGE value="added another button to the menu in the menu bar, opening web page with rules of minesweeper; new method openWeb" />
-    <option name="LAST_COMMIT_MESSAGE" value="added another button to the menu in the menu bar, opening web page with rules of minesweeper; new method openWeb" />
+    <MESSAGE value="replaced new ActionListener with lambda" />
+    <MESSAGE value="when you lose the main menu will appear" />
+    <MESSAGE value="replaced new Intro() with new Menu()" />
+    <MESSAGE value="." />
+    <MESSAGE value="new enum class of difficulty levels in the game" />
+    <option name="LAST_COMMIT_MESSAGE" value="new enum class of difficulty levels in the game" />
   </component>
 </project>

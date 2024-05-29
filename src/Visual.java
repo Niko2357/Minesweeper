@@ -13,6 +13,7 @@ public class Visual extends JFrame {
     protected int foundMines = 0;
     protected int revealedCells = 0;
     protected boolean lost;
+    protected Difficulty difficulty;
 
     public Visual() {
         setTitle("TNT Sweeper");
@@ -139,9 +140,35 @@ public class Visual extends JFrame {
      * This method checks whether player won. Player can achieve that by he marks all mines and reveals all cells.
      */
     public void winCheck(){
-        if(foundMines == MINES && revealedCells == (SIZE*SIZE-MINES)){
-            JOptionPane.showMessageDialog(this, "Winner!!!");
-            win();
+        int diff = 0;
+        switch(diff){
+            case 1:
+                if(MINES == 10 && (SIZE*SIZE-MINES) == 90){
+                    JOptionPane.showMessageDialog(this, "Winner!!!");
+                    win();
+                }
+            case 2:
+                if(MINES == 30 && (SIZE*SIZE-MINES) == 139){
+                    JOptionPane.showMessageDialog(this, "Winner!!!");
+                    win();
+                }
+            case 3:
+                if(MINES == 40 && (SIZE*SIZE-MINES) == 216){
+                    JOptionPane.showMessageDialog(this, "Winner!!!");
+                    win();
+                }
+            case 4:
+                if(MINES == 99 && (SIZE*SIZE-MINES) == 342){
+                    JOptionPane.showMessageDialog(this, "Winner!!!");
+                    win();
+                }
+            case 5:
+                if(MINES == 100 && (SIZE*SIZE-MINES) == 0){
+                    JOptionPane.showMessageDialog(this, "Winner!!!");
+                    win();
+                }
+            default:
+             diff = 1;
         }
     }
 

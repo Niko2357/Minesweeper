@@ -26,7 +26,7 @@ public class Intro {
                     game.playGame();
                     break;
                 case 2:
-                    Visual vis = new Visual();
+                    Visual vis = new Visual(Difficulty.EASY);
                     break;
                 case 3:
                     try (BufferedReader reader = new BufferedReader(new FileReader("src//Intro.eng"))) {

@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="04495222-66f1-4158-b315-49bb017cfa54" name="Changes" comment="remade method winCheck()">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Difficulty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Difficulty.java" afterDir="false" />
+    <list default="true" id="04495222-66f1-4158-b315-49bb017cfa54" name="Changes" comment=".">
+      <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Visual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Visual.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,20 +70,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1713165154160</updated>
-    </task>
-    <task id="LOCAL-00002" summary="new project Minesweeper">
-      <created>1713168796613</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1713168796613</updated>
-    </task>
-    <task id="LOCAL-00003" summary="new Class user, 'user account'">
-      <created>1713169041182</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1713169041182</updated>
     </task>
     <task id="LOCAL-00004" summary="File with instructions how to play MineSweeper">
       <created>1713172451370</created>
@@ -415,7 +400,21 @@
       <option name="project" value="LOCAL" />
       <updated>1716996211650</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="added properties and states">
+      <created>1717001575601</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1717001575601</updated>
+    </task>
+    <task id="LOCAL-00052" summary=".">
+      <created>1717001580574</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1717001580575</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -430,7 +429,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixed a constructor" />
     <MESSAGE value="private class from Visual remade as sole class" />
     <MESSAGE value="removed class ButtonWorks elsewhere and added bar with switching modes for marking mines" />
     <MESSAGE value="replaced new ActionListener with lambda, added methods winCheck and win" />
@@ -452,9 +450,10 @@
     <MESSAGE value="replaced new ActionListener with lambda" />
     <MESSAGE value="when you lose the main menu will appear" />
     <MESSAGE value="replaced new Intro() with new Menu()" />
-    <MESSAGE value="." />
     <MESSAGE value="new enum class of difficulty levels in the game" />
     <MESSAGE value="remade method winCheck()" />
-    <option name="LAST_COMMIT_MESSAGE" value="remade method winCheck()" />
+    <MESSAGE value="added properties and states" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
 </project>

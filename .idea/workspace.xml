@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="04495222-66f1-4158-b315-49bb017cfa54" name="Changes" comment="added easy difficulty to new Visual">
+    <list default="true" id="04495222-66f1-4158-b315-49bb017cfa54" name="Changes" comment="setting values of SIZE and MINES">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Visual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Visual.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,20 +71,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1713165154160</updated>
-    </task>
-    <task id="LOCAL-00007" summary="changed text">
-      <created>1713180568197</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1713180568197</updated>
-    </task>
-    <task id="LOCAL-00008" summary="edit of method menu">
-      <created>1713187959530</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1713187959530</updated>
     </task>
     <task id="LOCAL-00009" summary="added mp3 file">
       <created>1713187983973</created>
@@ -413,7 +401,21 @@
       <option name="project" value="LOCAL" />
       <updated>1717002701954</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="deleted values of size and mines">
+      <created>1717002939778</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1717002939778</updated>
+    </task>
+    <task id="LOCAL-00057" summary="setting values of SIZE and MINES">
+      <created>1717002997715</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1717002997715</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -428,8 +430,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixed integer revealedCells" />
-    <MESSAGE value="fixed winning message" />
     <MESSAGE value="deleting temporary help of printing" />
     <MESSAGE value="trying out" />
     <MESSAGE value="?" />
@@ -453,6 +453,8 @@
     <MESSAGE value="new class SelectDiff, new window with options of difficulty" />
     <MESSAGE value="replaced new Visual with new SelectDiff if play button is pressed" />
     <MESSAGE value="added easy difficulty to new Visual" />
-    <option name="LAST_COMMIT_MESSAGE" value="added easy difficulty to new Visual" />
+    <MESSAGE value="deleted values of size and mines" />
+    <MESSAGE value="setting values of SIZE and MINES" />
+    <option name="LAST_COMMIT_MESSAGE" value="setting values of SIZE and MINES" />
   </component>
 </project>

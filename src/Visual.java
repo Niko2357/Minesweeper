@@ -1,5 +1,6 @@
 import javax.swing.*;
 import java.awt.*;
+import java.util.HashMap;
 import java.util.Random;
 
 public class Visual extends JFrame {
@@ -14,11 +15,13 @@ public class Visual extends JFrame {
     protected int revealedCells = 0;
     protected boolean lost;
     protected Difficulty difficulty;
+    protected HashMap<Difficulty, Integer> assignedValues = new HashMap<>();
 
     public Visual(Difficulty difficulty) {
         this.difficulty = difficulty;
         this.SIZE = difficulty.getSize();
         this.MINES = difficulty.getMines();
+        addingToMap();
 
         setTitle("TNT Sweeper");
         setSize(1000, 1000);
@@ -141,36 +144,43 @@ public class Visual extends JFrame {
     }
 
     /**
+     * Adds values to the HashMap.
+     */
+    public void addingToMap(){
+        assignedValues.put(Difficulty.EASY, 1);
+        assignedValues.put(Difficulty.MEDIUM, 2);
+        assignedValues.put(Difficulty.HARD, 3);
+        assignedValues.put(Difficulty.GENIUS, 4);
+        assignedValues.put(Difficulty.IMPOSSIBLE, 5);
+    }
+
+    /**
      * This method checks whether player won. Player can achieve that by he marks all mines and reveals all cells.
      */
     public void winCheck(){
-        int diff = 0;
+        int diff = assignedValues.get(difficulty);
+        System.out.println(diff);
+        boolean winn = false;
         switch(diff){
             case 1:
-                if(MINES == 10 && (SIZE*SIZE-MINES) == 90){
-                    JOptionPane.showMessageDialog(this, "Winner!!!");
-                    win();
-                }
+                winn = (90 == SIZE * SIZE - 10);
+                break;
             case 2:
-                if(MINES == 30 && (SIZE*SIZE-MINES) == 139){
-                    JOptionPane.showMessageDialog(this, "Winner!!!");
-                    win();
-                }
+                winn = (139 == SIZE * SIZE - 30);
+                break;
             case 3:
-                if(MINES == 40 && (SIZE*SIZE-MINES) == 216){
-                    JOptionPane.showMessageDialog(this, "Winner!!!");
-                    win();
-                }
+                winn = (216 == SIZE * SIZE - 40);
+                break;
             case 4:
-                if(MINES == 99 && (SIZE*SIZE-MINES) == 342){
-                    JOptionPane.showMessageDialog(this, "Winner!!!");
-                    win();
-                }
+                winn = (342 == SIZE * SIZE - 99);
+                break;
             case 5:
-                if(MINES == 100 && (SIZE*SIZE-MINES) == 0){
-                    JOptionPane.showMessageDialog(this, "Winner!!!");
-                    win();
-                }
+                winn = (0 == SIZE * SIZE - 100);
+                break;
+        }
+        if(winn){
+            JOptionPane.showMessageDialog(this, "Good job");
+            win();
         }
     }
 

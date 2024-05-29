@@ -181,6 +181,7 @@ public class Visual extends JFrame {
             this.dispose();
             new SelectDiff();
         }else if(option == 1){
+            this.dispose();
             new Menu();
         }
     }

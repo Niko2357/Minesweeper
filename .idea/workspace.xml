@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="04495222-66f1-4158-b315-49bb017cfa54" name="Changes" comment=".">
-      <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
+    <list default="true" id="04495222-66f1-4158-b315-49bb017cfa54" name="Changes" comment="added easy difficulty to new Visual">
       <change beforePath="$PROJECT_DIR$/src/Visual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Visual.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -13,8 +12,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -70,27 +69,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1713165154160</updated>
-    </task>
-    <task id="LOCAL-00004" summary="File with instructions how to play MineSweeper">
-      <created>1713172451370</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1713172451370</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Minor change in text">
-      <created>1713172665037</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1713172665037</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Class Intro prints out 'menu' of the game">
-      <created>1713172954470</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1713172954470</updated>
     </task>
     <task id="LOCAL-00007" summary="changed text">
       <created>1713180568197</created>
@@ -414,7 +392,28 @@
       <option name="project" value="LOCAL" />
       <updated>1717001580575</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="new class SelectDiff, new window with options of difficulty">
+      <created>1717002606170</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1717002606171</updated>
+    </task>
+    <task id="LOCAL-00054" summary="replaced new Visual with new SelectDiff if play button is pressed">
+      <created>1717002653496</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1717002653496</updated>
+    </task>
+    <task id="LOCAL-00055" summary="added easy difficulty to new Visual">
+      <created>1717002701954</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1717002701954</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -429,9 +428,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="private class from Visual remade as sole class" />
-    <MESSAGE value="removed class ButtonWorks elsewhere and added bar with switching modes for marking mines" />
-    <MESSAGE value="replaced new ActionListener with lambda, added methods winCheck and win" />
     <MESSAGE value="fixed integer revealedCells" />
     <MESSAGE value="fixed winning message" />
     <MESSAGE value="deleting temporary help of printing" />
@@ -454,6 +450,9 @@
     <MESSAGE value="remade method winCheck()" />
     <MESSAGE value="added properties and states" />
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="new class SelectDiff, new window with options of difficulty" />
+    <MESSAGE value="replaced new Visual with new SelectDiff if play button is pressed" />
+    <MESSAGE value="added easy difficulty to new Visual" />
+    <option name="LAST_COMMIT_MESSAGE" value="added easy difficulty to new Visual" />
   </component>
 </project>

@@ -17,8 +17,8 @@ public class Visual extends JFrame {
 
     public Visual(Difficulty difficulty) {
         this.difficulty = difficulty;
-        this.SIZE = SIZE;
-        this.MINES = MINES;
+        this.SIZE = difficulty.getSize();
+        this.MINES = difficulty.getMines();
 
         setTitle("TNT Sweeper");
         setSize(1000, 1000);

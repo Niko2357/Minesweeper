@@ -1,7 +1,5 @@
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 public class Menu extends JFrame {
 
     public Menu() {
@@ -18,33 +16,15 @@ public class Menu extends JFrame {
         JButton howToPlayButton = new JButton("How to Play");
         JButton quitButton = new JButton("Quit");
 
-        playButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                new Visual();
-                dispose();
-            }
+        playButton.addActionListener(e -> {
+            new Visual();
+            dispose();
         });
 
-        signInButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(Menu.this, "Sign In Feature Not Implemented Yet");
-            }
-        });
+        signInButton.addActionListener(e -> JOptionPane.showMessageDialog(Menu.this, "Sign In Feature Not Implemented Yet"));
 
-        howToPlayButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                new Instructions();
-            }
-        });
-        quitButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                System.exit(0);
-            }
-        });
+        howToPlayButton.addActionListener(e -> new Instructions());
+        quitButton.addActionListener(e -> System.exit(0));
 
         mainPanel.add(playButton);
         mainPanel.add(signInButton);

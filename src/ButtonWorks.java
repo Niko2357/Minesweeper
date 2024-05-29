@@ -35,6 +35,9 @@ public class ButtonWorks implements ActionListener {
                 }
             }
         }else {
+            if("F".equals(button.getText())){
+                return;
+            }
             if (visual.mines[row][column]) {
                 button.setText("X");
                 visual.revealM();
@@ -45,7 +48,6 @@ public class ButtonWorks implements ActionListener {
                 int count = visual.count(row, column);
                 if (count > 0) {
                     button.setText(String.valueOf(count));
-                    visual.revealedCells++;
                 } else {
                     button.setText("");
                 }

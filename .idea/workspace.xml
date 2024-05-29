@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="04495222-66f1-4158-b315-49bb017cfa54" name="Changes" comment="new enum class of difficulty levels in the game">
+    <list default="true" id="04495222-66f1-4158-b315-49bb017cfa54" name="Changes" comment="remade method winCheck()">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Difficulty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Difficulty.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Visual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Visual.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,13 +71,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1713165154160</updated>
-    </task>
-    <task id="LOCAL-00001" summary="new class Field with methods make field, printOut and constructor">
-      <created>1713168757981</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1713168757981</updated>
     </task>
     <task id="LOCAL-00002" summary="new project Minesweeper">
       <created>1713168796613</created>
@@ -414,7 +408,14 @@
       <option name="project" value="LOCAL" />
       <updated>1716995159255</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="remade method winCheck()">
+      <created>1716996211650</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1716996211650</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -429,7 +430,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="new class replacing the old one Window" />
     <MESSAGE value="fixed a constructor" />
     <MESSAGE value="private class from Visual remade as sole class" />
     <MESSAGE value="removed class ButtonWorks elsewhere and added bar with switching modes for marking mines" />
@@ -454,6 +454,7 @@
     <MESSAGE value="replaced new Intro() with new Menu()" />
     <MESSAGE value="." />
     <MESSAGE value="new enum class of difficulty levels in the game" />
-    <option name="LAST_COMMIT_MESSAGE" value="new enum class of difficulty levels in the game" />
+    <MESSAGE value="remade method winCheck()" />
+    <option name="LAST_COMMIT_MESSAGE" value="remade method winCheck()" />
   </component>
 </project>

@@ -43,6 +43,7 @@ public class ButtonWorks implements ActionListener {
                 visual.revealM();
                 JOptionPane.showMessageDialog(visual, "Game Over!");
                 new Menu();
+                visual.dispose();
             } else {
                 visual.revealEmpty(row, column);
                 int count = visual.count(row, column);

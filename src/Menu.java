@@ -4,7 +4,7 @@ public class Menu extends JFrame {
 
     public Menu() {
         setTitle("TNT Sweeper Main Menu");
-        setSize(400, 400);
+        setSize(600, 600);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
 
@@ -17,7 +17,7 @@ public class Menu extends JFrame {
         JButton quitButton = new JButton("Quit");
 
         playButton.addActionListener(e -> {
-            new Visual();
+            new SelectDiff();
             dispose();
         });
 

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="04495222-66f1-4158-b315-49bb017cfa54" name="Changes" comment="setting values of SIZE and MINES">
+    <list default="true" id="04495222-66f1-4158-b315-49bb017cfa54" name="Changes" comment="flowers as flags for flag button">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ButtonWorks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ButtonWorks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Visual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Visual.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,20 +71,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1713165154160</updated>
-    </task>
-    <task id="LOCAL-00009" summary="added mp3 file">
-      <created>1713187983973</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1713187983973</updated>
-    </task>
-    <task id="LOCAL-00010" summary="trying out code">
-      <created>1713187998902</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1713187998902</updated>
     </task>
     <task id="LOCAL-00011" summary="method playGame">
       <created>1713188027870</created>
@@ -415,7 +401,21 @@
       <option name="project" value="LOCAL" />
       <updated>1717002997715</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="changed method winCheck, doesnt work">
+      <created>1717005322822</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1717005322822</updated>
+    </task>
+    <task id="LOCAL-00059" summary="flowers as flags for flag button">
+      <created>1717005348026</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1717005348026</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -430,8 +430,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="deleting temporary help of printing" />
-    <MESSAGE value="trying out" />
     <MESSAGE value="?" />
     <MESSAGE value="new class hint" />
     <MESSAGE value="new class Solver with methods solving and counting mines and flags around the cell" />
@@ -455,6 +453,8 @@
     <MESSAGE value="added easy difficulty to new Visual" />
     <MESSAGE value="deleted values of size and mines" />
     <MESSAGE value="setting values of SIZE and MINES" />
-    <option name="LAST_COMMIT_MESSAGE" value="setting values of SIZE and MINES" />
+    <MESSAGE value="changed method winCheck, doesnt work" />
+    <MESSAGE value="flowers as flags for flag button" />
+    <option name="LAST_COMMIT_MESSAGE" value="flowers as flags for flag button" />
   </component>
 </project>

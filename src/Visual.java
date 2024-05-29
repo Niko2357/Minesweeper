@@ -12,7 +12,6 @@ public class Visual extends JFrame {
     protected boolean[][] mines;
     protected boolean flagMode = false;
     protected int foundMines = 0;
-    protected int revealedCells = 0;
     protected boolean lost;
     protected Difficulty difficulty;
     protected HashMap<Difficulty, Integer> assignedValues = new HashMap<>();
@@ -33,12 +32,21 @@ public class Visual extends JFrame {
         mines = new boolean[SIZE][SIZE];
 
         JPanel mainPanel = new JPanel();
-        JButton tButton = new JButton("Mode: Dig");
-        tButton.addActionListener(ac -> {
+        JButton flagButton = new JButton("Mode: Dig");
+        flagButton.addActionListener(ac -> {
             flagMode = !flagMode;
-            tButton.setText(flagMode ? "Mode: Mark" : "Mode: Dig");
+            flagButton.setText(flagMode ? "Mode: Mark" : "Mode: Dig");
         });
-        mainPanel.add(tButton);
+        JMenuBar menubar = new JMenuBar();
+        JMenu menu = new JMenu();
+        JMenuItem item1 = new JMenuItem("Back to Main menu");
+        item1.addActionListener(ac -> {
+            new Menu();
+            dispose();
+        });
+        menu.add(item1);
+        menubar.add(menu);
+        mainPanel.add(flagButton);
         add(mainPanel, BorderLayout.NORTH);
 
         JPanel gridPanel = new JPanel();
@@ -130,12 +138,9 @@ public class Visual extends JFrame {
         if (count > 0) {
             buttons[row][column].setText(String.valueOf(count));
             buttons[row][column].setEnabled(false);
-            revealedCells++;
             return;
         }
-
         buttons[row][column].setEnabled(false);
-        revealedCells++;
         for (int theRow = -1; theRow <= 1; theRow++) {
             for (int theColumn = -1; theColumn <= 1; theColumn++) {
                 revealEmpty(row + theRow, column + theColumn);
@@ -158,27 +163,9 @@ public class Visual extends JFrame {
      * This method checks whether player won. Player can achieve that by he marks all mines and reveals all cells.
      */
     public void winCheck(){
-        int diff = assignedValues.get(difficulty);
-        System.out.println(diff);
-        boolean winn = false;
-        switch(diff){
-            case 1:
-                winn = (90 == SIZE * SIZE - 10);
-                break;
-            case 2:
-                winn = (139 == SIZE * SIZE - 30);
-                break;
-            case 3:
-                winn = (216 == SIZE * SIZE - 40);
-                break;
-            case 4:
-                winn = (342 == SIZE * SIZE - 99);
-                break;
-            case 5:
-                winn = (0 == SIZE * SIZE - 100);
-                break;
-        }
-        if(winn){
+        int allCells = SIZE * SIZE;
+        int notMineCells = allCells - MINES;
+        if(allCells - MINES == notMineCells && foundMines == MINES){
             JOptionPane.showMessageDialog(this, "Good job");
             win();
         }

@@ -37,16 +37,36 @@ public class Visual extends JFrame {
             flagMode = !flagMode;
             flagButton.setText(flagMode ? "Mode: Mark" : "Mode: Dig");
         });
+        JButton hintButton = new JButton("Hint");
+        hintButton.addActionListener(ac ->{
+            new Hint();
+        });
+
         JMenuBar menubar = new JMenuBar();
-        JMenu menu = new JMenu();
+        JMenu menu = new JMenu("Menu");
         JMenuItem item1 = new JMenuItem("Back to Main menu");
         item1.addActionListener(ac -> {
             new Menu();
             dispose();
         });
+        JMenuItem item2 = new JMenuItem("Flag choice");
+        item2.addActionListener(ac -> {
+
+        });
+        JMenuItem item3 = new JMenuItem("Auto-Solve");
+        item3.addActionListener(ac -> {
+            new Solver(this);
+        });
+
         menu.add(item1);
+        menu.add(item2);
+        menu.add(item3);
+
         menubar.add(menu);
+        setJMenuBar(menubar);
+
         mainPanel.add(flagButton);
+        mainPanel.add(hintButton);
         add(mainPanel, BorderLayout.NORTH);
 
         JPanel gridPanel = new JPanel();

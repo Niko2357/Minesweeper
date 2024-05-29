@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="04495222-66f1-4158-b315-49bb017cfa54" name="Changes" comment="flowers as flags for flag button">
+    <list default="true" id="04495222-66f1-4158-b315-49bb017cfa54" name="Changes" comment="disposing game window after winning">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ButtonWorks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ButtonWorks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Solver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Solver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Visual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Visual.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,34 +71,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1713165154160</updated>
-    </task>
-    <task id="LOCAL-00011" summary="method playGame">
-      <created>1713188027870</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1713188027870</updated>
-    </task>
-    <task id="LOCAL-00012" summary="new class Box representing one number or cell on board">
-      <created>1714509108506</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1714509108506</updated>
-    </task>
-    <task id="LOCAL-00013" summary="new methods showBox, canSee and checkExistenceofBox, also some small edits">
-      <created>1714509410467</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1714509410467</updated>
-    </task>
-    <task id="LOCAL-00014" summary="new methods locExists, inLocate">
-      <created>1714509677286</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1714509677286</updated>
     </task>
     <task id="LOCAL-00015" summary="new class Location simplifies one box/location/position">
       <created>1714509741419</created>
@@ -415,7 +387,35 @@
       <option name="project" value="LOCAL" />
       <updated>1717005348026</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="deleted revealCells, using different method for checkWin(), adding menu bar with back to main menu function">
+      <created>1717009076225</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1717009076225</updated>
+    </task>
+    <task id="LOCAL-00061" summary="deleted revealCells">
+      <created>1717009093502</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1717009093502</updated>
+    </task>
+    <task id="LOCAL-00062" summary="disposing game window after losing">
+      <created>1717009205701</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1717009205701</updated>
+    </task>
+    <task id="LOCAL-00063" summary="disposing game window after winning">
+      <created>1717009267855</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1717009267855</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -430,10 +430,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="?" />
-    <MESSAGE value="new class hint" />
-    <MESSAGE value="new class Solver with methods solving and counting mines and flags around the cell" />
-    <MESSAGE value="method countHidden, count of covered cells" />
     <MESSAGE value="methods revealH and revealF, they solve and show the cells" />
     <MESSAGE value="new class Instructions, that loads file explaining how to play, uses separate window" />
     <MESSAGE value="comments to readFile method" />
@@ -455,6 +451,10 @@
     <MESSAGE value="setting values of SIZE and MINES" />
     <MESSAGE value="changed method winCheck, doesnt work" />
     <MESSAGE value="flowers as flags for flag button" />
-    <option name="LAST_COMMIT_MESSAGE" value="flowers as flags for flag button" />
+    <MESSAGE value="deleted revealCells, using different method for checkWin(), adding menu bar with back to main menu function" />
+    <MESSAGE value="deleted revealCells" />
+    <MESSAGE value="disposing game window after losing" />
+    <MESSAGE value="disposing game window after winning" />
+    <option name="LAST_COMMIT_MESSAGE" value="disposing game window after winning" />
   </component>
 </project>

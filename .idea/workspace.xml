@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="04495222-66f1-4158-b315-49bb017cfa54" name="Changes" comment="class menu, window with buttons of options">
+    <list default="true" id="04495222-66f1-4158-b315-49bb017cfa54" name="Changes" comment=".">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Instructions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Instructions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Visual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Visual.java" afterDir="false" />
     </list>
@@ -36,7 +39,8 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/Nikolka_skola/Programování/Java/Minesweeper",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "D:/Nikolka_skola/Programování/Java/Zaver_TNTSweeper/Minesweeper",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"
@@ -336,7 +340,28 @@
       <option name="project" value="LOCAL" />
       <updated>1716908770453</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="method lostGame for help">
+      <created>1716908847395</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1716908847395</updated>
+    </task>
+    <task id="LOCAL-00040" summary=".">
+      <created>1716908857251</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1716908857251</updated>
+    </task>
+    <task id="LOCAL-00041" summary=".">
+      <created>1716908961697</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1716908961697</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -351,9 +376,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="new class Box representing one number or cell on board" />
-    <MESSAGE value="new methods showBox, canSee and checkExistenceofBox, also some small edits" />
-    <MESSAGE value="new methods locExists, inLocate" />
     <MESSAGE value="new class Location simplifies one box/location/position" />
     <MESSAGE value="new class Window" />
     <MESSAGE value="new class Visual making window version of minesweeper" />
@@ -376,6 +398,9 @@
     <MESSAGE value="new class Instructions, that loads file explaining how to play, uses separate window" />
     <MESSAGE value="comments to readFile method" />
     <MESSAGE value="class menu, window with buttons of options" />
-    <option name="LAST_COMMIT_MESSAGE" value="class menu, window with buttons of options" />
+    <MESSAGE value="method lostGame for help" />
+    <MESSAGE value="main" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
 </project>

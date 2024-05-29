@@ -39,7 +39,7 @@ public class ButtonWorks implements ActionListener {
                 button.setText("X");
                 visual.revealM();
                 JOptionPane.showMessageDialog(visual, "Game Over!");
-                System.exit(0);
+                new Menu();
             } else {
                 visual.revealEmpty(row, column);
                 int count = visual.count(row, column);

@@ -155,7 +155,7 @@ public class Visual extends JFrame {
             this.dispose();
             new Visual();
         }else if(option == 1){
-            new Intro();
+            new Menu();
         }
     }
 

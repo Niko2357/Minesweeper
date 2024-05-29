@@ -4,8 +4,8 @@ import java.util.Random;
 
 public class Visual extends JFrame {
 
-    protected static final int SIZE = 10;
-    protected static final int MINES = 10;
+    protected int SIZE;
+    protected int MINES;
 
     protected JButton[][] buttons;
     protected boolean[][] mines;
@@ -15,7 +15,11 @@ public class Visual extends JFrame {
     protected boolean lost;
     protected Difficulty difficulty;
 
-    public Visual() {
+    public Visual(Difficulty difficulty) {
+        this.difficulty = difficulty;
+        this.SIZE = SIZE;
+        this.MINES = MINES;
+
         setTitle("TNT Sweeper");
         setSize(1000, 1000);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -167,8 +171,6 @@ public class Visual extends JFrame {
                     JOptionPane.showMessageDialog(this, "Winner!!!");
                     win();
                 }
-            default:
-             diff = 1;
         }
     }
 
@@ -180,7 +182,7 @@ public class Visual extends JFrame {
                 JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE, null, new Object[]{"Play again", "Menu"}, null);
         if(option == 0){
             this.dispose();
-            new Visual();
+            new SelectDiff();
         }else if(option == 1){
             new Menu();
         }

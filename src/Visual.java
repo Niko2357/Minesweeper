@@ -13,6 +13,7 @@ public class Visual extends JFrame {
     protected boolean flagMode = false;
     protected int foundMines = 0;
     protected boolean lost;
+    protected boolean won;
     protected Difficulty difficulty;
     protected HashMap<Difficulty, Integer> assignedValues = new HashMap<>();
 
@@ -39,7 +40,7 @@ public class Visual extends JFrame {
         });
         JButton hintButton = new JButton("Hint");
         hintButton.addActionListener(ac ->{
-            new Hint();
+            new Hint(this);
         });
 
         JMenuBar menubar = new JMenuBar();
@@ -56,6 +57,7 @@ public class Visual extends JFrame {
         JMenuItem item3 = new JMenuItem("Auto-Solve");
         item3.addActionListener(ac -> {
             new Solver(this);
+            winCheck();
         });
 
         menu.add(item1);
@@ -195,6 +197,7 @@ public class Visual extends JFrame {
      * Carries on the message of winning a game and leads player to the menu.
      */
     public void win(){
+        won = true;
         int option = JOptionPane.showOptionDialog(this, "You have won!!!", "Winner",
                 JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE, null, new Object[]{"Play again", "Menu"}, null);
         if(option == 0){
@@ -206,8 +209,20 @@ public class Visual extends JFrame {
         }
     }
 
+    /**
+     * Helpful variable.
+     * @return
+     */
     public boolean lostGame(){
         return lost;
+    }
+
+    /**
+     * Helpful variable.
+     * @return
+     */
+    public boolean wonGame(){
+        return won;
     }
 
 

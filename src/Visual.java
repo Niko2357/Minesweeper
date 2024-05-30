@@ -16,6 +16,7 @@ public class Visual extends JFrame {
     protected boolean won;
     protected Difficulty difficulty;
     protected HashMap<Difficulty, Integer> assignedValues = new HashMap<>();
+    protected Hint hint;
 
     public Visual(Difficulty difficulty) {
         this.difficulty = difficulty;
@@ -40,7 +41,7 @@ public class Visual extends JFrame {
         });
         JButton hintButton = new JButton("Hint");
         hintButton.addActionListener(ac ->{
-            new Hint(this);
+            hint = new Hint(this);
         });
 
         JMenuBar menubar = new JMenuBar();

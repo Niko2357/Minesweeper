@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="04495222-66f1-4158-b315-49bb017cfa54" name="Changes" comment="new image sign">
+    <list default="true" id="04495222-66f1-4158-b315-49bb017cfa54" name="Changes" comment="renamed class">
+      <change afterPath="$PROJECT_DIR$/src/BackgroundFlow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Floor/sign.png" beforeDir="false" afterPath="$PROJECT_DIR$/Floor/sign.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Visual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Visual.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SelectDiff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SelectDiff.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,34 +80,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1713165154160</updated>
-    </task>
-    <task id="LOCAL-00048" summary=".">
-      <created>1716994557324</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1716994557324</updated>
-    </task>
-    <task id="LOCAL-00049" summary="new enum class of difficulty levels in the game">
-      <created>1716995159255</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1716995159255</updated>
-    </task>
-    <task id="LOCAL-00050" summary="remade method winCheck()">
-      <created>1716996211650</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1716996211650</updated>
-    </task>
-    <task id="LOCAL-00051" summary="added properties and states">
-      <created>1717001575601</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1717001575601</updated>
     </task>
     <task id="LOCAL-00052" summary=".">
       <created>1717001580574</created>
@@ -424,7 +396,35 @@
       <option name="project" value="LOCAL" />
       <updated>1717102139764</updated>
     </task>
-    <option name="localTasksCounter" value="97" />
+    <task id="LOCAL-00097" summary="better design for buttons">
+      <created>1717102692446</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1717102692446</updated>
+    </task>
+    <task id="LOCAL-00098" summary="found wrong code, more new Menu()">
+      <created>1717102967798</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1717102967798</updated>
+    </task>
+    <task id="LOCAL-00099" summary="deleted to reveal mines as X">
+      <created>1717103176141</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1717103176141</updated>
+    </task>
+    <task id="LOCAL-00100" summary="renamed class">
+      <created>1717104000063</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1717104000063</updated>
+    </task>
+    <option name="localTasksCounter" value="101" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -439,10 +439,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="new class for checking if the cell has already been marked as hinted" />
-    <MESSAGE value="in conclusion, it was useless" />
-    <MESSAGE value="in conclusion, hintedCell was useless" />
-    <MESSAGE value="returned back" />
     <MESSAGE value="semi solve not auto solve" />
     <MESSAGE value="deleted actionListener" />
     <MESSAGE value="added Main menu backgrounds and cell design as files" />
@@ -464,6 +460,10 @@
     <MESSAGE value="changed grass file" />
     <MESSAGE value="changed grass file cause it doesnt really let reveal numbers" />
     <MESSAGE value="new image sign" />
-    <option name="LAST_COMMIT_MESSAGE" value="new image sign" />
+    <MESSAGE value="better design for buttons" />
+    <MESSAGE value="found wrong code, more new Menu()" />
+    <MESSAGE value="deleted to reveal mines as X" />
+    <MESSAGE value="renamed class" />
+    <option name="LAST_COMMIT_MESSAGE" value="renamed class" />
   </component>
 </project>

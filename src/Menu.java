@@ -9,25 +9,25 @@ public class Menu extends JFrame {
         setLocationRelativeTo(null);
 
         JPanel mainPanel = new JPanel();
-        mainPanel.setLayout(new GridLayout(4, 1, 10, 10));
+        mainPanel.setLayout(new BoxLayout(mainPanel, BoxLayout.Y_AXIS));
 
         JButton playButton = new JButton("Play");
-        JButton signInButton = new JButton("Sign In");
+        playButton.setAlignmentX(Component.CENTER_ALIGNMENT);
         JButton howToPlayButton = new JButton("How to Play");
+        howToPlayButton.setAlignmentX(Component.CENTER_ALIGNMENT);
         JButton quitButton = new JButton("Quit");
+        quitButton.setAlignmentX(Component.CENTER_ALIGNMENT);
+
 
         playButton.addActionListener(e -> {
             new SelectDiff();
             dispose();
         });
 
-        signInButton.addActionListener(e -> JOptionPane.showMessageDialog(Menu.this, "Sign In Feature Not Implemented Yet"));
-
         howToPlayButton.addActionListener(e -> new Instructions());
         quitButton.addActionListener(e -> System.exit(0));
 
         mainPanel.add(playButton);
-        mainPanel.add(signInButton);
         mainPanel.add(howToPlayButton);
         mainPanel.add(quitButton);
 

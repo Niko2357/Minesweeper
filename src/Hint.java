@@ -1,9 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
-
 public class Hint {
-    private Visual visual;
-
+    protected Visual visual;
     public Hint(Visual visual){
         this.visual = visual;
         giveAHint();
@@ -14,11 +12,13 @@ public class Hint {
         JButton[][] buttons = visual.buttons;
         for(int i = 0; i < mines.length; i++){
             for(int j = 0; j < mines[i].length; j++){
-                if(!mines[i][j] && buttons[i][j].getText().equals("")){
+                if(!mines[i][j] && buttons[i][j].isEnabled()){
                     buttons[i][j].setBackground(Color.CYAN);
                     return;
                 }
             }
         }
     }
+
+
 }

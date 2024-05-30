@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="04495222-66f1-4158-b315-49bb017cfa54" name="Changes" comment="plus menu bar with other buttons">
+    <list default="true" id="04495222-66f1-4158-b315-49bb017cfa54" name="Changes" comment="title images">
+      <change afterPath="$PROJECT_DIR$/src/HintedCell.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ButtonWorks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ButtonWorks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Hint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Solver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Solver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Visual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Visual.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,17 +33,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "D:/Nikolka_skola/Programování/Java/Zaver_TNTSweeper/Minesweeper",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Nikolka_skola/Programování/Java/Zaver_TNTSweeper/Minesweeper&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Nikolka_skola\Programování\Java\MInesweeper\src" />
@@ -73,41 +71,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1713165154160</updated>
-    </task>
-    <task id="LOCAL-00016" summary="trying out">
-      <created>1714509756963</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1714509756963</updated>
-    </task>
-    <task id="LOCAL-00017" summary="trying out">
-      <created>1715110285097</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1715110285097</updated>
-    </task>
-    <task id="LOCAL-00018" summary="new class Window">
-      <created>1715110311716</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1715110311716</updated>
-    </task>
-    <task id="LOCAL-00019" summary="new class Visual making window version of minesweeper">
-      <created>1715608633243</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1715608633243</updated>
-    </task>
-    <task id="LOCAL-00020" summary="added options of two game modes(console and window version)">
-      <created>1716713180769</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1716713180769</updated>
     </task>
     <task id="LOCAL-00021" summary="fixed method revealEmpty so that it works, added javadocs to all methods">
       <created>1716714651536</created>
@@ -417,7 +380,42 @@
       <option name="project" value="LOCAL" />
       <updated>1717011069148</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="more ifs">
+      <created>1717014880397</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1717014880397</updated>
+    </task>
+    <task id="LOCAL-00066" summary="method for hints">
+      <created>1717014902153</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1717014902153</updated>
+    </task>
+    <task id="LOCAL-00067" summary="variable lost getting value">
+      <created>1717014942054</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1717014942054</updated>
+    </task>
+    <task id="LOCAL-00068" summary="boolean methods for assistance">
+      <created>1717014981052</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1717014981052</updated>
+    </task>
+    <task id="LOCAL-00069" summary="title images">
+      <created>1717056526209</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1717056526209</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -432,11 +430,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="new class Instructions, that loads file explaining how to play, uses separate window" />
-    <MESSAGE value="comments to readFile method" />
-    <MESSAGE value="class menu, window with buttons of options" />
-    <MESSAGE value="method lostGame for help" />
-    <MESSAGE value="main" />
     <MESSAGE value="added another button to the menu in the menu bar, opening web page with rules of minesweeper; new method openWeb" />
     <MESSAGE value="replaced new ActionListener with lambda" />
     <MESSAGE value="when you lose the main menu will appear" />
@@ -457,6 +450,11 @@
     <MESSAGE value="disposing game window after losing" />
     <MESSAGE value="disposing game window after winning" />
     <MESSAGE value="plus menu bar with other buttons" />
-    <option name="LAST_COMMIT_MESSAGE" value="plus menu bar with other buttons" />
+    <MESSAGE value="more ifs" />
+    <MESSAGE value="method for hints" />
+    <MESSAGE value="variable lost getting value" />
+    <MESSAGE value="boolean methods for assistance" />
+    <MESSAGE value="title images" />
+    <option name="LAST_COMMIT_MESSAGE" value="title images" />
   </component>
 </project>

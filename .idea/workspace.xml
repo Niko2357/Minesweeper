@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="04495222-66f1-4158-b315-49bb017cfa54" name="Changes" comment="title images">
-      <change afterPath="$PROJECT_DIR$/src/HintedCell.java" afterDir="false" />
+    <list default="true" id="04495222-66f1-4158-b315-49bb017cfa54" name="Changes" comment="in conclusion, hintedCell was useless">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Hint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Solver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Solver.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,27 +70,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1713165154160</updated>
-    </task>
-    <task id="LOCAL-00021" summary="fixed method revealEmpty so that it works, added javadocs to all methods">
-      <created>1716714651536</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1716714651536</updated>
-    </task>
-    <task id="LOCAL-00022" summary="new class replacing the old one Window">
-      <created>1716714829930</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1716714829930</updated>
-    </task>
-    <task id="LOCAL-00023" summary="fixed a constructor">
-      <created>1716714859438</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1716714859438</updated>
     </task>
     <task id="LOCAL-00024" summary="private class from Visual remade as sole class">
       <created>1716750506418</created>
@@ -415,7 +393,28 @@
       <option name="project" value="LOCAL" />
       <updated>1717056526209</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="new class for checking if the cell has already been marked as hinted">
+      <created>1717057299391</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1717057299391</updated>
+    </task>
+    <task id="LOCAL-00071" summary="in conclusion, it was useless">
+      <created>1717057392851</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1717057392851</updated>
+    </task>
+    <task id="LOCAL-00072" summary="in conclusion, hintedCell was useless">
+      <created>1717057412622</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1717057412622</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -430,9 +429,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added another button to the menu in the menu bar, opening web page with rules of minesweeper; new method openWeb" />
-    <MESSAGE value="replaced new ActionListener with lambda" />
-    <MESSAGE value="when you lose the main menu will appear" />
     <MESSAGE value="replaced new Intro() with new Menu()" />
     <MESSAGE value="new enum class of difficulty levels in the game" />
     <MESSAGE value="remade method winCheck()" />
@@ -455,6 +451,9 @@
     <MESSAGE value="variable lost getting value" />
     <MESSAGE value="boolean methods for assistance" />
     <MESSAGE value="title images" />
-    <option name="LAST_COMMIT_MESSAGE" value="title images" />
+    <MESSAGE value="new class for checking if the cell has already been marked as hinted" />
+    <MESSAGE value="in conclusion, it was useless" />
+    <MESSAGE value="in conclusion, hintedCell was useless" />
+    <option name="LAST_COMMIT_MESSAGE" value="in conclusion, hintedCell was useless" />
   </component>
 </project>

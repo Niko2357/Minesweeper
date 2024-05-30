@@ -54,7 +54,7 @@ public class Visual extends JFrame {
         item2.addActionListener(ac -> {
 
         });
-        JMenuItem item3 = new JMenuItem("Auto-Solve");
+        JMenuItem item3 = new JMenuItem("Semi-Solve");
         item3.addActionListener(ac -> {
             new Solver(this);
             winCheck();

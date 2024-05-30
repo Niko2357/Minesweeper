@@ -1,13 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="04495222-66f1-4158-b315-49bb017cfa54" name="Changes" comment="changed location">
+    <list default="true" id="04495222-66f1-4158-b315-49bb017cfa54" name="Changes" comment="new class for changing background">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainMenu2.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Floor/Obsidian.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Allium.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blue_Orchid.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cyan_Flower.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dandelion.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lilac.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainMenu1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Menus/MainMenu1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainMenu10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainMenu11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainMenu2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Menus/MainMenu2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainMenu3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainMenu4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainMenu5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainMenu6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainMenu7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainMenu8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainMenu9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obsidian.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orange_Tulip.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Peony_aka_Paeonia.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Poppy.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rose_Bush.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Title2.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/Title2.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dirt.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grass.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Visual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Visual.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/grass.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,11 +74,11 @@
       <recent name="D:\Nikolka_skola\Programování\Java\MInesweeper\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Nikolka_skola\Programování\Java\Zaver_TNTSweeper\Minesweeper\Menus" />
       <recent name="D:\Nikolka_skola\Programování\Java\Zaver_TNTSweeper\Minesweeper" />
       <recent name="D:\Nikolka_skola\Programování\Java\Zaver_TNTSweeper\Minesweeper\out" />
       <recent name="D:\Nikolka_skola\Programování\Java\Zaver_TNTSweeper\Minesweeper\src" />
       <recent name="D:\Nikolka_skola\Programování\Java\Zaver_TNTSweeper\Minesweeper\src\Floor" />
-      <recent name="D:\Nikolka_skola\Programování\Java\Zaver_TNTSweeper\Minesweeper\src\Flags" />
     </key>
   </component>
   <component name="RunManager">
@@ -82,48 +103,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1713165154160</updated>
-    </task>
-    <task id="LOCAL-00037" summary="comments to readFile method">
-      <created>1716908690826</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1716908690826</updated>
-    </task>
-    <task id="LOCAL-00038" summary="class menu, window with buttons of options">
-      <created>1716908770453</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1716908770453</updated>
-    </task>
-    <task id="LOCAL-00039" summary="method lostGame for help">
-      <created>1716908847395</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1716908847395</updated>
-    </task>
-    <task id="LOCAL-00040" summary=".">
-      <created>1716908857251</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1716908857251</updated>
-    </task>
-    <task id="LOCAL-00041" summary=".">
-      <created>1716908961697</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1716908961697</updated>
-    </task>
-    <task id="LOCAL-00042" summary=".">
-      <created>1716993699826</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1716993699826</updated>
     </task>
     <task id="LOCAL-00043" summary=".">
       <created>1716993713005</created>
@@ -426,7 +405,49 @@
       <option name="project" value="LOCAL" />
       <updated>1717082548496</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <task id="LOCAL-00086" summary="had to move files out of src, cause they dont work there for some reason">
+      <created>1717088273242</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1717088273242</updated>
+    </task>
+    <task id="LOCAL-00087" summary="had to move files out of src, cause they dont work there for some reason">
+      <created>1717088279337</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1717088279337</updated>
+    </task>
+    <task id="LOCAL-00088" summary="field filled with grass">
+      <created>1717088316682</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1717088316682</updated>
+    </task>
+    <task id="LOCAL-00089" summary="deleted">
+      <created>1717096976725</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1717096976725</updated>
+    </task>
+    <task id="LOCAL-00090" summary="another main menu images">
+      <created>1717096997002</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1717096997002</updated>
+    </task>
+    <task id="LOCAL-00091" summary="new class for changing background">
+      <created>1717097074128</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1717097074128</updated>
+    </task>
+    <option name="localTasksCounter" value="92" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -441,11 +462,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="deleted revealCells, using different method for checkWin(), adding menu bar with back to main menu function" />
-    <MESSAGE value="deleted revealCells" />
-    <MESSAGE value="disposing game window after losing" />
-    <MESSAGE value="disposing game window after winning" />
-    <MESSAGE value="plus menu bar with other buttons" />
     <MESSAGE value="more ifs" />
     <MESSAGE value="method for hints" />
     <MESSAGE value="variable lost getting value" />
@@ -466,6 +482,11 @@
     <MESSAGE value="." />
     <MESSAGE value="setting icon" />
     <MESSAGE value="changed location" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed location" />
+    <MESSAGE value="had to move files out of src, cause they dont work there for some reason" />
+    <MESSAGE value="field filled with grass" />
+    <MESSAGE value="deleted" />
+    <MESSAGE value="another main menu images" />
+    <MESSAGE value="new class for changing background" />
+    <option name="LAST_COMMIT_MESSAGE" value="new class for changing background" />
   </component>
 </project>

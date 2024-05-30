@@ -1,7 +1,9 @@
 import javax.swing.*;
 import java.awt.*;
 import java.util.HashMap;
+import java.util.Objects;
 import java.util.Random;
+import javax.swing.ImageIcon;
 
 public class Visual extends JFrame {
 
@@ -29,6 +31,8 @@ public class Visual extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new BorderLayout(SIZE, SIZE));
         setLocationRelativeTo(null);
+        ImageIcon icon = new ImageIcon("MainMenu5.png");
+        setIconImage(icon.getImage());
 
         buttons = new JButton[SIZE][SIZE];
         mines = new boolean[SIZE][SIZE];
@@ -76,7 +80,10 @@ public class Visual extends JFrame {
         gridPanel.setLayout(new GridLayout(SIZE, SIZE));
         add(gridPanel, BorderLayout.CENTER);
 
-        makeButtons(gridPanel);
+        ImageIcon grass = new ImageIcon("grass.png");
+        ImageIcon title1 = new ImageIcon("Title1.png");
+
+        makeButtons(gridPanel, grass);
         placeMine();
         setVisible(true);
     }
@@ -85,10 +92,10 @@ public class Visual extends JFrame {
     /**
      * Builds the board of this game with buttons.
      */
-    public void makeButtons(JPanel gridPanel) {
+    public void makeButtons(JPanel gridPanel, ImageIcon icon) {
         for (int i = 0; i < SIZE; i++) {
             for (int j = 0; j < SIZE; j++) {
-                JButton button = new JButton();
+                JButton button = new JButton(icon);
                 button.setPreferredSize(new Dimension(40, 40));
                 button.setMargin(new Insets(0, 0, 0, 0));
                 button.addActionListener(new ButtonWorks(i, j, this));

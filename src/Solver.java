@@ -21,7 +21,6 @@ public class Solver {
 
     public void solve(){
         while(!visual.lostGame() && !visual.wonGame()){
-            boolean progress = false;
             for (int i = 0; i < rows; i++) {
                 for (int j = 0; j < columns; j++) {
                     if(buttons[i][j].getText().equals("") && !did[i][j]){
@@ -30,17 +29,11 @@ public class Solver {
                         int closeHidden = countHidden(i, j);
                         if(closeMines == closeFlags){
                             revealMines(i, j);
-                            progress = true;
                         }else if(closeMines == closeHidden + closeFlags){
                             revealF(i, j);
-                            progress = true;
                         }
                     }
                 }
-            }
-            if(!progress){
-                System.out.println("It's not solving.");
-                break;
             }
         }
     }

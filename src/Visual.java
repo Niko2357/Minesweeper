@@ -19,6 +19,7 @@ public class Visual extends JFrame {
     protected Difficulty difficulty;
     protected HashMap<Difficulty, Integer> assignedValues = new HashMap<>();
     protected Hint hint;
+    ImageIcon TNT;
 
     public Visual(Difficulty difficulty) {
         this.difficulty = difficulty;
@@ -33,6 +34,7 @@ public class Visual extends JFrame {
         setLocationRelativeTo(null);
         ImageIcon icon = new ImageIcon("MainMenu5.png");
         setIconImage(icon.getImage());
+        TNT = new ImageIcon("Floor/TNT.png");
 
         buttons = new JButton[SIZE][SIZE];
         mines = new boolean[SIZE][SIZE];
@@ -132,7 +134,7 @@ public class Visual extends JFrame {
         for (int i = 0; i < SIZE; i++) {
             for (int j = 0; j < SIZE; j++) {
                 if (mines[i][j]) {
-                    buttons[i][j].setText("X");
+                    buttons[i][j].setIcon(TNT);
                 }
             }
         }

@@ -7,6 +7,8 @@ public class SelectDiff extends JFrame {
         setSize(600, 600);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new GridLayout());
+        ImageIcon icon = new ImageIcon("MainMenu5.png");
+        setIconImage(icon.getImage());
 
         JButton easy = new JButton("Easy");
         JButton medium = new JButton("Medium");

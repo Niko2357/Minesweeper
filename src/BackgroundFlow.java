@@ -13,7 +13,9 @@ public class BackgroundFlow extends JPanel{
     public void paintComponent(Graphics g){
         super.paintComponent(g);
         if(background != null){
-            g.drawImage(background, 0, 0, this);
+            int scaleWidth = getWidth();
+            int scaleHeight = getHeight();
+            g.drawImage(background, 0, -20, scaleWidth, scaleHeight, this);
         }
     }
 }

@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="04495222-66f1-4158-b315-49bb017cfa54" name="Changes" comment="in conclusion, hintedCell was useless">
+    <list default="true" id="04495222-66f1-4158-b315-49bb017cfa54" name="Changes" comment="semi solve not auto solve">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Solver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Solver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ButtonWorks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ButtonWorks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Hint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Visual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Visual.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,20 +72,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1713165154160</updated>
-    </task>
-    <task id="LOCAL-00024" summary="private class from Visual remade as sole class">
-      <created>1716750506418</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1716750506418</updated>
-    </task>
-    <task id="LOCAL-00025" summary="removed class ButtonWorks elsewhere and added bar with switching modes for marking mines">
-      <created>1716750562832</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1716750562832</updated>
     </task>
     <task id="LOCAL-00026" summary="replaced new ActionListener with lambda, added methods winCheck and win">
       <created>1716829903103</created>
@@ -414,7 +402,21 @@
       <option name="project" value="LOCAL" />
       <updated>1717057412622</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="returned back">
+      <created>1717057991567</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1717057991567</updated>
+    </task>
+    <task id="LOCAL-00074" summary="semi solve not auto solve">
+      <created>1717058013336</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1717058013336</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -429,8 +431,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="replaced new Intro() with new Menu()" />
-    <MESSAGE value="new enum class of difficulty levels in the game" />
     <MESSAGE value="remade method winCheck()" />
     <MESSAGE value="added properties and states" />
     <MESSAGE value="." />
@@ -454,6 +454,8 @@
     <MESSAGE value="new class for checking if the cell has already been marked as hinted" />
     <MESSAGE value="in conclusion, it was useless" />
     <MESSAGE value="in conclusion, hintedCell was useless" />
-    <option name="LAST_COMMIT_MESSAGE" value="in conclusion, hintedCell was useless" />
+    <MESSAGE value="returned back" />
+    <MESSAGE value="semi solve not auto solve" />
+    <option name="LAST_COMMIT_MESSAGE" value="semi solve not auto solve" />
   </component>
 </project>

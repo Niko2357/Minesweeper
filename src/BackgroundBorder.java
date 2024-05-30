@@ -1,9 +1,9 @@
 import javax.swing.*;
 import java.awt.*;
 
-public class Background extends JPanel {
+public class BackgroundBorder extends JPanel {
     protected Image background;
-    public Background(Image background){
+    public BackgroundBorder(Image background){
         this.background = background;
         setLayout(new BorderLayout());
     }

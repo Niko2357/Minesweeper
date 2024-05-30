@@ -4,11 +4,15 @@ import java.awt.*;
 public class SelectDiff extends JFrame {
     public SelectDiff(){
         setTitle("Difficulty Selection");
-        setSize(600, 600);
+        setSize(800, 550);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setLayout(new GridLayout());
-        ImageIcon icon = new ImageIcon("MainMenu5.png");
+        setLayout(new FlowLayout());
+        ImageIcon icon = new ImageIcon("Menus/MainMenu5.png");
         setIconImage(icon.getImage());
+        ImageIcon backgroundImage = new ImageIcon("Menus/MainMenu10.png");
+
+        Image back = backgroundImage.getImage();
+        BackgroundFlow background = new BackgroundFlow(back);
 
         JButton easy = new JButton("Easy");
         JButton medium = new JButton("Medium");
@@ -37,11 +41,12 @@ public class SelectDiff extends JFrame {
             dispose();
         });
 
-        add(easy);
-        add(medium);
-        add(hard);
-        add(genius);
-        add(impossible);
+        background.add(easy);
+        background.add(medium);
+        background.add(hard);
+        background.add(genius);
+        background.add(impossible);
+        add(background);
         setLocationRelativeTo(null);
         setVisible(true);
     }

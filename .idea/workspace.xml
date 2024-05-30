@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="04495222-66f1-4158-b315-49bb017cfa54" name="Changes" comment="renamed class">
-      <change afterPath="$PROJECT_DIR$/src/BackgroundFlow.java" afterDir="false" />
+    <list default="true" id="04495222-66f1-4158-b315-49bb017cfa54" name="Changes" comment="new class for background image of selectDiff class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BackgroundFlow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BackgroundFlow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SelectDiff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SelectDiff.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,20 +79,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1713165154160</updated>
-    </task>
-    <task id="LOCAL-00052" summary=".">
-      <created>1717001580574</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1717001580575</updated>
-    </task>
-    <task id="LOCAL-00053" summary="new class SelectDiff, new window with options of difficulty">
-      <created>1717002606170</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1717002606171</updated>
     </task>
     <task id="LOCAL-00054" summary="replaced new Visual with new SelectDiff if play button is pressed">
       <created>1717002653496</created>
@@ -424,7 +409,21 @@
       <option name="project" value="LOCAL" />
       <updated>1717104000063</updated>
     </task>
-    <option name="localTasksCounter" value="101" />
+    <task id="LOCAL-00101" summary=".">
+      <created>1717104807647</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1717104807647</updated>
+    </task>
+    <task id="LOCAL-00102" summary="new class for background image of selectDiff class">
+      <created>1717104910134</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1717104910134</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -439,7 +438,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="semi solve not auto solve" />
     <MESSAGE value="deleted actionListener" />
     <MESSAGE value="added Main menu backgrounds and cell design as files" />
     <MESSAGE value="another if for hints to not be so easy to get(I know its long)" />
@@ -447,7 +445,6 @@
     <MESSAGE value="trying out different layout" />
     <MESSAGE value="some file moving and renaming" />
     <MESSAGE value="setting icon of window, some images" />
-    <MESSAGE value="." />
     <MESSAGE value="setting icon" />
     <MESSAGE value="changed location" />
     <MESSAGE value="had to move files out of src, cause they dont work there for some reason" />
@@ -464,6 +461,8 @@
     <MESSAGE value="found wrong code, more new Menu()" />
     <MESSAGE value="deleted to reveal mines as X" />
     <MESSAGE value="renamed class" />
-    <option name="LAST_COMMIT_MESSAGE" value="renamed class" />
+    <MESSAGE value="." />
+    <MESSAGE value="new class for background image of selectDiff class" />
+    <option name="LAST_COMMIT_MESSAGE" value="new class for background image of selectDiff class" />
   </component>
 </project>

@@ -1,22 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="04495222-66f1-4158-b315-49bb017cfa54" name="Changes" comment="trying out different layout">
-      <change afterPath="$PROJECT_DIR$/src/MainFrame.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MainFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="04495222-66f1-4158-b315-49bb017cfa54" name="Changes" comment="changed location">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Obsidian.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dirt.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/grass.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Allium.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Blue_Orchid.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cyan_Flower.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dandelion.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Instructions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Instructions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainMenu2.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Floor/Obsidian.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SelectDiff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SelectDiff.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Visual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Visual.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/grass.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,8 +53,10 @@
       <recent name="D:\Nikolka_skola\Programování\Java\MInesweeper\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Nikolka_skola\Programování\Java\Zaver_TNTSweeper\Minesweeper\src\Floor" />
+      <recent name="D:\Nikolka_skola\Programování\Java\Zaver_TNTSweeper\Minesweeper" />
+      <recent name="D:\Nikolka_skola\Programování\Java\Zaver_TNTSweeper\Minesweeper\out" />
       <recent name="D:\Nikolka_skola\Programování\Java\Zaver_TNTSweeper\Minesweeper\src" />
+      <recent name="D:\Nikolka_skola\Programování\Java\Zaver_TNTSweeper\Minesweeper\src\Floor" />
       <recent name="D:\Nikolka_skola\Programování\Java\Zaver_TNTSweeper\Minesweeper\src\Flags" />
     </key>
   </component>
@@ -89,48 +82,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1713165154160</updated>
-    </task>
-    <task id="LOCAL-00031" summary="?">
-      <created>1716834155293</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1716834155293</updated>
-    </task>
-    <task id="LOCAL-00032" summary="new class hint">
-      <created>1716836505459</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1716836505459</updated>
-    </task>
-    <task id="LOCAL-00033" summary="new class Solver with methods solving and counting mines and flags around the cell">
-      <created>1716836595274</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1716836595274</updated>
-    </task>
-    <task id="LOCAL-00034" summary="method countHidden, count of covered cells">
-      <created>1716836727470</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1716836727470</updated>
-    </task>
-    <task id="LOCAL-00035" summary="methods revealH and revealF, they solve and show the cells">
-      <created>1716836943306</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1716836943306</updated>
-    </task>
-    <task id="LOCAL-00036" summary="new class Instructions, that loads file explaining how to play, uses separate window">
-      <created>1716908566024</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1716908566025</updated>
     </task>
     <task id="LOCAL-00037" summary="comments to readFile method">
       <created>1716908690826</created>
@@ -433,7 +384,49 @@
       <option name="project" value="LOCAL" />
       <updated>1717074111589</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="some file moving and renaming">
+      <created>1717082235938</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1717082235939</updated>
+    </task>
+    <task id="LOCAL-00081" summary="setting icon of window, some images">
+      <created>1717082484712</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1717082484712</updated>
+    </task>
+    <task id="LOCAL-00082" summary=".">
+      <created>1717082495559</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1717082495559</updated>
+    </task>
+    <task id="LOCAL-00083" summary="setting icon">
+      <created>1717082511295</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1717082511295</updated>
+    </task>
+    <task id="LOCAL-00084" summary="setting icon">
+      <created>1717082519482</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1717082519482</updated>
+    </task>
+    <task id="LOCAL-00085" summary="changed location">
+      <created>1717082548496</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1717082548496</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -448,11 +441,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added easy difficulty to new Visual" />
-    <MESSAGE value="deleted values of size and mines" />
-    <MESSAGE value="setting values of SIZE and MINES" />
-    <MESSAGE value="changed method winCheck, doesnt work" />
-    <MESSAGE value="flowers as flags for flag button" />
     <MESSAGE value="deleted revealCells, using different method for checkWin(), adding menu bar with back to main menu function" />
     <MESSAGE value="deleted revealCells" />
     <MESSAGE value="disposing game window after losing" />
@@ -473,6 +461,11 @@
     <MESSAGE value="another if for hints to not be so easy to get(I know its long)" />
     <MESSAGE value="trying out hint" />
     <MESSAGE value="trying out different layout" />
-    <option name="LAST_COMMIT_MESSAGE" value="trying out different layout" />
+    <MESSAGE value="some file moving and renaming" />
+    <MESSAGE value="setting icon of window, some images" />
+    <MESSAGE value="." />
+    <MESSAGE value="setting icon" />
+    <MESSAGE value="changed location" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed location" />
   </component>
 </project>

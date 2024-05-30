@@ -95,8 +95,13 @@ public class Visual extends JFrame {
     public void makeButtons(JPanel gridPanel, ImageIcon icon) {
         for (int i = 0; i < SIZE; i++) {
             for (int j = 0; j < SIZE; j++) {
-                JButton button = new JButton(icon);
+                JButton button = new JButton();
                 button.setPreferredSize(new Dimension(40, 40));
+                button.setIcon(icon);
+                button.setBorderPainted(false);
+                button.setContentAreaFilled(false);
+                button.setFocusPainted(false);
+                button.setOpaque(false);
                 button.setMargin(new Insets(0, 0, 0, 0));
                 button.addActionListener(new ButtonWorks(i, j, this));
                 buttons[i][j] = button;

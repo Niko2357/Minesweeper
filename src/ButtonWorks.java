@@ -54,8 +54,6 @@ public class ButtonWorks implements ActionListener {
                             visual.dispose();
                             new Menu();
                         }
-                        new Menu();
-                        visual.dispose();
                     } else {
                         visual.revealEmpty(row, column);
                         int count = visual.count(row, column);

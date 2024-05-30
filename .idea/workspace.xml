@@ -1,33 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="04495222-66f1-4158-b315-49bb017cfa54" name="Changes" comment="new class for changing background">
+    <list default="true" id="04495222-66f1-4158-b315-49bb017cfa54" name="Changes" comment="changed grass file cause it doesnt really let reveal numbers">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Allium.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blue_Orchid.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cyan_Flower.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dandelion.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lilac.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainMenu1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Menus/MainMenu1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainMenu10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainMenu11.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainMenu2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Menus/MainMenu2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainMenu3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainMenu4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainMenu5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainMenu6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainMenu7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainMenu8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainMenu9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Obsidian.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Orange_Tulip.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Peony_aka_Paeonia.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Poppy.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rose_Bush.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Title2.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/Title2.PNG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dirt.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/grass.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Floor/TNT.png" beforeDir="false" afterPath="$PROJECT_DIR$/Floor/TNT.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Visual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Visual.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -103,34 +79,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1713165154160</updated>
-    </task>
-    <task id="LOCAL-00043" summary=".">
-      <created>1716993713005</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1716993713005</updated>
-    </task>
-    <task id="LOCAL-00044" summary="added another button to the menu in the menu bar, opening web page with rules of minesweeper; new method openWeb">
-      <created>1716993887045</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1716993887045</updated>
-    </task>
-    <task id="LOCAL-00045" summary="replaced new ActionListener with lambda">
-      <created>1716994354958</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1716994354958</updated>
-    </task>
-    <task id="LOCAL-00046" summary="when you lose the main menu will appear">
-      <created>1716994392294</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1716994392294</updated>
     </task>
     <task id="LOCAL-00047" summary="replaced new Intro() with new Menu()">
       <created>1716994545106</created>
@@ -447,7 +395,35 @@
       <option name="project" value="LOCAL" />
       <updated>1717097074128</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary="some file things">
+      <created>1717099858116</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1717099858116</updated>
+    </task>
+    <task id="LOCAL-00093" summary="some file things">
+      <created>1717099865716</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1717099865716</updated>
+    </task>
+    <task id="LOCAL-00094" summary="added some design and pictures">
+      <created>1717099883971</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1717099883971</updated>
+    </task>
+    <task id="LOCAL-00095" summary="changed grass file cause it doesnt really let reveal numbers">
+      <created>1717099996936</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1717099996936</updated>
+    </task>
+    <option name="localTasksCounter" value="96" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -462,10 +438,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="more ifs" />
-    <MESSAGE value="method for hints" />
-    <MESSAGE value="variable lost getting value" />
-    <MESSAGE value="boolean methods for assistance" />
     <MESSAGE value="title images" />
     <MESSAGE value="new class for checking if the cell has already been marked as hinted" />
     <MESSAGE value="in conclusion, it was useless" />
@@ -487,6 +459,10 @@
     <MESSAGE value="deleted" />
     <MESSAGE value="another main menu images" />
     <MESSAGE value="new class for changing background" />
-    <option name="LAST_COMMIT_MESSAGE" value="new class for changing background" />
+    <MESSAGE value="some file things" />
+    <MESSAGE value="added some design and pictures" />
+    <MESSAGE value="changed grass file" />
+    <MESSAGE value="changed grass file cause it doesnt really let reveal numbers" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed grass file cause it doesnt really let reveal numbers" />
   </component>
 </project>

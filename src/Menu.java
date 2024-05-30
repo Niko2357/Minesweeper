@@ -7,6 +7,8 @@ public class Menu extends JFrame {
         setSize(600, 600);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
+        ImageIcon icon = new ImageIcon("MainMenu5.png");
+        setIconImage(icon.getImage());
 
         JPanel mainPanel = new JPanel();
         mainPanel.setLayout(new BoxLayout(mainPanel, BoxLayout.Y_AXIS));
@@ -17,7 +19,6 @@ public class Menu extends JFrame {
         howToPlayButton.setAlignmentX(Component.CENTER_ALIGNMENT);
         JButton quitButton = new JButton("Quit");
         quitButton.setAlignmentX(Component.CENTER_ALIGNMENT);
-
 
         playButton.addActionListener(e -> {
             new SelectDiff();

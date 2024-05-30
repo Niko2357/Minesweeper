@@ -12,6 +12,8 @@ public class Instructions extends JFrame {
         setSize(1000, 1000);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
+        ImageIcon icon = new ImageIcon("MainMenu5.png");
+        setIconImage(icon.getImage());
 
         JMenuBar menubar = new JMenuBar();
         JMenu menu = new JMenu("Menu");

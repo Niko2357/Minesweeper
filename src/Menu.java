@@ -3,7 +3,7 @@ import javax.swing.Box;
 import java.awt.*;
 import java.util.ArrayList;
 public class Menu extends JFrame {
-    protected Background backgroundImage;
+    protected BackgroundBorder backgroundBorderImage;
     protected Timer time;
     protected ArrayList<Image> backgroundImages;
     protected int curImage;
@@ -29,7 +29,7 @@ public class Menu extends JFrame {
         backgroundImages.add(new ImageIcon("Menus/MainMenu11.jpg").getImage());
         curImage = 0;
 
-        backgroundImage = new Background(backgroundImages.get(curImage));
+        backgroundBorderImage = new BackgroundBorder(backgroundImages.get(curImage));
 
         JPanel mainPanel = new JPanel();
         mainPanel.setOpaque(false);
@@ -87,10 +87,9 @@ public class Menu extends JFrame {
         mainPanel.add(Box.createRigidArea(new Dimension(0, 30)));
         mainPanel.add(quitButton);
         mainPanel.add(Box.createVerticalGlue());
-        //mainPanel.add(backPic);
 
-        backgroundImage.add(mainPanel, BorderLayout.CENTER);
-        setContentPane(backgroundImage);
+        backgroundBorderImage.add(mainPanel, BorderLayout.CENTER);
+        setContentPane(backgroundBorderImage);
 
         time = new Timer(5000, e -> switchImage());
         time.start();
@@ -99,7 +98,7 @@ public class Menu extends JFrame {
 
     public void switchImage(){
         curImage = (curImage + 1) % backgroundImages.size();
-        backgroundImage.setBackgroundImage(backgroundImages.get(curImage));
+        backgroundBorderImage.setBackgroundImage(backgroundImages.get(curImage));
     }
 
 

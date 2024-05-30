@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="04495222-66f1-4158-b315-49bb017cfa54" name="Changes" comment="changed grass file cause it doesnt really let reveal numbers">
+    <list default="true" id="04495222-66f1-4158-b315-49bb017cfa54" name="Changes" comment="new image sign">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Floor/TNT.png" beforeDir="false" afterPath="$PROJECT_DIR$/Floor/TNT.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Floor/sign.png" beforeDir="false" afterPath="$PROJECT_DIR$/Floor/sign.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Visual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Visual.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,13 +80,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1713165154160</updated>
-    </task>
-    <task id="LOCAL-00047" summary="replaced new Intro() with new Menu()">
-      <created>1716994545106</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1716994545106</updated>
     </task>
     <task id="LOCAL-00048" summary=".">
       <created>1716994557324</created>
@@ -423,7 +417,14 @@
       <option name="project" value="LOCAL" />
       <updated>1717099996936</updated>
     </task>
-    <option name="localTasksCounter" value="96" />
+    <task id="LOCAL-00096" summary="new image sign">
+      <created>1717102139764</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1717102139764</updated>
+    </task>
+    <option name="localTasksCounter" value="97" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -438,7 +439,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="title images" />
     <MESSAGE value="new class for checking if the cell has already been marked as hinted" />
     <MESSAGE value="in conclusion, it was useless" />
     <MESSAGE value="in conclusion, hintedCell was useless" />
@@ -463,6 +463,7 @@
     <MESSAGE value="added some design and pictures" />
     <MESSAGE value="changed grass file" />
     <MESSAGE value="changed grass file cause it doesnt really let reveal numbers" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed grass file cause it doesnt really let reveal numbers" />
+    <MESSAGE value="new image sign" />
+    <option name="LAST_COMMIT_MESSAGE" value="new image sign" />
   </component>
 </project>

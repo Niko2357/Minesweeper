@@ -39,26 +39,36 @@ public class Menu extends JFrame {
         JLabel titleLabel = new JLabel(titlePic);
         titleLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
 
-        ImageIcon background = new ImageIcon("Obsidian.jpg");
-        JLabel backPic = new JLabel(background);
+        ImageIcon sign = new ImageIcon("Floor/sign.png");
 
-        Dimension buttonSize = new Dimension(150, 50);
         Font buttonFont = new Font("Calibri", Font.BOLD, 20);
 
-        JButton playButton = new JButton("Play");
+        JButton playButton = new JButton("Play", sign);
         playButton.setAlignmentX(Component.CENTER_ALIGNMENT);
-        playButton.setPreferredSize(buttonSize);
+        playButton.setHorizontalTextPosition(SwingConstants.CENTER);
+        playButton.setVerticalTextPosition(SwingConstants.CENTER);
         playButton.setFont(buttonFont);
+        playButton.setOpaque(false);
+        playButton.setBorderPainted(false);
+        playButton.setContentAreaFilled(false);
 
-        JButton howToPlayButton = new JButton("How to Play");
+        JButton howToPlayButton = new JButton("How to Play", sign);
         howToPlayButton.setAlignmentX(Component.CENTER_ALIGNMENT);
-        howToPlayButton.setPreferredSize(buttonSize);
+        howToPlayButton.setHorizontalTextPosition(SwingConstants.CENTER);
+        howToPlayButton.setVerticalTextPosition(SwingConstants.CENTER);
         howToPlayButton.setFont(buttonFont);
+        howToPlayButton.setOpaque(false);
+        howToPlayButton.setBorderPainted(false);
+        howToPlayButton.setContentAreaFilled(false);
 
-        JButton quitButton = new JButton("Quit");
+        JButton quitButton = new JButton("Quit", sign);
         quitButton.setAlignmentX(Component.CENTER_ALIGNMENT);
+        quitButton.setHorizontalTextPosition(SwingConstants.CENTER);
+        quitButton.setVerticalTextPosition(SwingConstants.CENTER);
         quitButton.setFont(buttonFont);
-        quitButton.setPreferredSize(buttonSize);
+        quitButton.setOpaque(false);
+        quitButton.setBorderPainted(false);
+        quitButton.setContentAreaFilled(false);
 
         playButton.addActionListener(e -> {
             new SelectDiff();

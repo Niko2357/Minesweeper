@@ -15,6 +15,7 @@ public class Menu extends JFrame {
         setLocationRelativeTo(null);
         ImageIcon icon = new ImageIcon("Menus/MainMenu5.png");
         setIconImage(icon.getImage());
+        ImageClickListener.flagsChosen.clear();
 
         backgroundImages = new ArrayList<>();
         backgroundImages.add(new ImageIcon("Menus/MainMenu1.jpg").getImage());
@@ -72,7 +73,7 @@ public class Menu extends JFrame {
 
         playButton.addActionListener(e -> {
             new SelectDiff();
-            dispose();
+            this.dispose();
         });
 
         howToPlayButton.addActionListener(e -> new Instructions());

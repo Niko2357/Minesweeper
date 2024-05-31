@@ -1,7 +1,5 @@
 import javax.swing.*;
 import java.awt.*;
-import java.util.HashMap;
-import java.util.Objects;
 import java.util.Random;
 import javax.swing.ImageIcon;
 
@@ -30,7 +28,7 @@ public class Visual extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new BorderLayout(SIZE, SIZE));
         setLocationRelativeTo(null);
-        ImageIcon icon = new ImageIcon("MainMenu5.png");
+        ImageIcon icon = new ImageIcon("Menus/MainMenu5.png");
         setIconImage(icon.getImage());
         TNT = new ImageIcon("Floor/TNT.png");
 
@@ -57,7 +55,7 @@ public class Visual extends JFrame {
         });
         JMenuItem item2 = new JMenuItem("Flag choice");
         item2.addActionListener(ac -> {
-
+            new SelectFlag();
         });
         JMenuItem item3 = new JMenuItem("Semi-Solve");
         item3.addActionListener(ac -> {
@@ -211,7 +209,7 @@ public class Visual extends JFrame {
     }
 
     /**
-     * Helpful variable.
+     * Support variable.
      * @return
      */
     public boolean lostGame(){
@@ -219,7 +217,7 @@ public class Visual extends JFrame {
     }
 
     /**
-     * Helpful variable.
+     * Support variable.
      * @return
      */
     public boolean wonGame(){

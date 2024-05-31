@@ -18,6 +18,11 @@ public class Visual extends JFrame {
     protected Hint hint;
     ImageIcon TNT;
 
+    ImageIcon flag = new ImageIcon("Flags/Poppy.png");
+    ImageIcon dirt = new ImageIcon("Floor/dirt.jpg");
+    ImageIcon grass = new ImageIcon("Floor/grass.png");
+    ImageIcon obsidian = new ImageIcon("Floor/Obsidian.jpg");
+
     public Visual(Difficulty difficulty) {
         this.difficulty = difficulty;
         this.SIZE = difficulty.getSize();
@@ -63,6 +68,7 @@ public class Visual extends JFrame {
             winCheck();
         });
 
+        ImageClickListener.flagsChosen.add("Flags/Lilac.png");
         menu.add(item1);
         menu.add(item2);
         menu.add(item3);
@@ -77,8 +83,6 @@ public class Visual extends JFrame {
         JPanel gridPanel = new JPanel();
         gridPanel.setLayout(new GridLayout(SIZE, SIZE));
         add(gridPanel, BorderLayout.CENTER);
-
-        ImageIcon grass = new ImageIcon("Floor/grass.png");
 
         makeButtons(gridPanel, grass);
         placeMine();
@@ -162,20 +166,24 @@ public class Visual extends JFrame {
      * @param column width of cell
      */
     public void revealEmpty(int row, int column) {
-        if (row < 0 || row >= SIZE || column < 0 || column >= SIZE || !buttons[row][column].isEnabled()  || "F".equals(buttons[row][column].getText())){
-            return;
-    }
-        buttons[row][column].setEnabled(false);
-        int count = count(row, column);
-        if (count > 0) {
-            buttons[row][column].setText(String.valueOf(count));
-            buttons[row][column].setEnabled(false);
+        if (row < 0 || row >= SIZE || column < 0 || column >= SIZE || !buttons[row][column].isEnabled()  || flag.equals(buttons[row][column].getIcon())){
             return;
         }
         buttons[row][column].setEnabled(false);
+        buttons[row][column].setIcon(null);
+        int count = count(row, column);
+        if (count > 0) {
+            buttons[row][column].setText(String.valueOf(count));
+            return;
+        }else{
+            buttons[row][column].setIcon(dirt);
+            buttons[row][column].setOpaque(true);
+        }
         for (int theRow = -1; theRow <= 1; theRow++) {
             for (int theColumn = -1; theColumn <= 1; theColumn++) {
-                revealEmpty(row + theRow, column + theColumn);
+                if(theRow != 0 || theColumn != 0) {
+                    revealEmpty(row + theRow, column + theColumn);
+                }
             }
         }
     }

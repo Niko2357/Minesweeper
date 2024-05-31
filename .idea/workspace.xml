@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="04495222-66f1-4158-b315-49bb017cfa54" name="Changes" comment="added obsidian image">
+    <list default="true" id="04495222-66f1-4158-b315-49bb017cfa54" name="Changes" comment="deleted">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flags/Allium.png" beforeDir="false" afterPath="$PROJECT_DIR$/Flags/Allium.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flags/Blue_Orchid.png" beforeDir="false" afterPath="$PROJECT_DIR$/Flags/Blue_Orchid.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flags/Cyan_Flower.png" beforeDir="false" afterPath="$PROJECT_DIR$/Flags/Cyan_Flower.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flags/Dandelion.png" beforeDir="false" afterPath="$PROJECT_DIR$/Flags/Dandelion.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flags/Lilac.png" beforeDir="false" afterPath="$PROJECT_DIR$/Flags/Lilac.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flags/Orange_Tulip.png" beforeDir="false" afterPath="$PROJECT_DIR$/Flags/Orange_Tulip.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flags/Peony_aka_Paeonia.png" beforeDir="false" afterPath="$PROJECT_DIR$/Flags/Peony_aka_Paeonia.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flags/Poppy.png" beforeDir="false" afterPath="$PROJECT_DIR$/Flags/Poppy.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flags/Rose_Bush.png" beforeDir="false" afterPath="$PROJECT_DIR$/Flags/Rose_Bush.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Box.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ButtonWorks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ButtonWorks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Intro.eng" beforeDir="false" afterPath="$PROJECT_DIR$/src/Intro.eng" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Field.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ImageClickListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ImageClickListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Intro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Location.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SelectFlag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SelectFlag.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Visual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Visual.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -90,62 +87,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1713165154160</updated>
-    </task>
-    <task id="LOCAL-00069" summary="title images">
-      <created>1717056526209</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1717056526209</updated>
-    </task>
-    <task id="LOCAL-00070" summary="new class for checking if the cell has already been marked as hinted">
-      <created>1717057299391</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1717057299391</updated>
-    </task>
-    <task id="LOCAL-00071" summary="in conclusion, it was useless">
-      <created>1717057392851</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1717057392851</updated>
-    </task>
-    <task id="LOCAL-00072" summary="in conclusion, hintedCell was useless">
-      <created>1717057412622</created>
-      <option name="number" value="00072" />
-      <option name="presentableId" value="LOCAL-00072" />
-      <option name="project" value="LOCAL" />
-      <updated>1717057412622</updated>
-    </task>
-    <task id="LOCAL-00073" summary="returned back">
-      <created>1717057991567</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1717057991567</updated>
-    </task>
-    <task id="LOCAL-00074" summary="semi solve not auto solve">
-      <created>1717058013336</created>
-      <option name="number" value="00074" />
-      <option name="presentableId" value="LOCAL-00074" />
-      <option name="project" value="LOCAL" />
-      <updated>1717058013336</updated>
-    </task>
-    <task id="LOCAL-00075" summary="deleted actionListener">
-      <created>1717069052523</created>
-      <option name="number" value="00075" />
-      <option name="presentableId" value="LOCAL-00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1717069052523</updated>
-    </task>
-    <task id="LOCAL-00076" summary="added Main menu backgrounds and cell design as files">
-      <created>1717069095459</created>
-      <option name="number" value="00076" />
-      <option name="presentableId" value="LOCAL-00076" />
-      <option name="project" value="LOCAL" />
-      <updated>1717069095459</updated>
     </task>
     <task id="LOCAL-00077" summary="another if for hints to not be so easy to get(I know its long)">
       <created>1717069136069</created>
@@ -434,7 +375,63 @@
       <option name="project" value="LOCAL" />
       <updated>1717160990620</updated>
     </task>
-    <option name="localTasksCounter" value="118" />
+    <task id="LOCAL-00118" summary=".">
+      <created>1717165452503</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1717165452503</updated>
+    </task>
+    <task id="LOCAL-00119" summary="added few lines of text">
+      <created>1717165470945</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1717165470945</updated>
+    </task>
+    <task id="LOCAL-00120" summary="comments">
+      <created>1717169657513</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1717169657513</updated>
+    </task>
+    <task id="LOCAL-00121" summary="adjusted size">
+      <created>1717169666002</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1717169666002</updated>
+    </task>
+    <task id="LOCAL-00122" summary="deleted">
+      <created>1717169725329</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1717169725329</updated>
+    </task>
+    <task id="LOCAL-00123" summary="change of name">
+      <created>1717178968543</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1717178968543</updated>
+    </task>
+    <task id="LOCAL-00124" summary="change of size">
+      <created>1717178975690</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1717178975690</updated>
+    </task>
+    <task id="LOCAL-00125" summary="deleted">
+      <created>1717179071373</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1717179071373</updated>
+    </task>
+    <option name="localTasksCounter" value="126" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -449,15 +446,8 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added some design and pictures" />
-    <MESSAGE value="changed grass file" />
-    <MESSAGE value="changed grass file cause it doesnt really let reveal numbers" />
-    <MESSAGE value="new image sign" />
-    <MESSAGE value="better design for buttons" />
-    <MESSAGE value="found wrong code, more new Menu()" />
     <MESSAGE value="deleted to reveal mines as X" />
     <MESSAGE value="renamed class" />
-    <MESSAGE value="." />
     <MESSAGE value="new class for background image of selectDiff class" />
     <MESSAGE value="background and size" />
     <MESSAGE value="some edits" />
@@ -474,6 +464,13 @@
     <MESSAGE value="added new property class SelectFlag and event" />
     <MESSAGE value="new name for a file" />
     <MESSAGE value="added obsidian image" />
-    <option name="LAST_COMMIT_MESSAGE" value="added obsidian image" />
+    <MESSAGE value="." />
+    <MESSAGE value="added few lines of text" />
+    <MESSAGE value="comments" />
+    <MESSAGE value="adjusted size" />
+    <MESSAGE value="change of name" />
+    <MESSAGE value="change of size" />
+    <MESSAGE value="deleted" />
+    <option name="LAST_COMMIT_MESSAGE" value="deleted" />
   </component>
 </project>

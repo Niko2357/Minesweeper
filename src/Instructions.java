@@ -1,4 +1,5 @@
 import javax.swing.*;
+import javax.swing.border.Border;
 import java.awt.*;
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -12,7 +13,7 @@ public class Instructions extends JFrame {
         setSize(1000, 1000);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
-        ImageIcon icon = new ImageIcon("MainMenu5.png");
+        ImageIcon icon = new ImageIcon("Menus/MainMenu5.png");
         setIconImage(icon.getImage());
 
         JMenuBar menubar = new JMenuBar();
@@ -36,7 +37,7 @@ public class Instructions extends JFrame {
         textA.setEditable(false);
         textA.setLineWrap(true);
         textA.setWrapStyleWord(true);
-        textA.setFont(new Font("Dialog", Font.PLAIN, 24));
+        textA.setFont(new Font("Dialog", Font.BOLD, 24));
         JScrollPane scrollPane = new JScrollPane(textA);
         add(scrollPane, BorderLayout.CENTER);
 

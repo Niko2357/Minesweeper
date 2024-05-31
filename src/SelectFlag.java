@@ -14,19 +14,22 @@ public class SelectFlag extends JFrame {
         setIconImage(icon.getImage());
 
         JPanel panel = new JPanel(new GridLayout(0, 3));
-        panel.setBackground(Color.getHSBColor(28, 61, 96));
+        panel.setBackground(Color.WHITE);
         JLabel[] imLabel = new JLabel[flags.length];
         for(int i = 0; i < flags.length; i++){
             ImageIcon image = new ImageIcon(flags[i]);
-            JLabel label = new JLabel(image);
+            JLabel picture = new JLabel(image);
             JLabel text = new JLabel(labels[i]);
+            picture.setHorizontalAlignment(SwingConstants.CENTER);
             text.setHorizontalAlignment(SwingConstants.CENTER);
-            label.setBounds(20, 20 + i * 200, image.getIconWidth(), image.getIconHeight());
-            label.addMouseListener(new ImageClickListener(i, labels[i]));
-            panel.add(label);
-            imLabel[i] = label;
+            JPanel imagePanel = new JPanel(new BorderLayout());
+            imagePanel.add(picture, BorderLayout.CENTER);
+            imagePanel.add(text, BorderLayout.SOUTH);
+
+            picture.addMouseListener(new ImageClickListener(labels[i], this));
+            panel.add(imagePanel);
         }
-        add(panel);
+        add(new JScrollPane(panel));
         setLocationRelativeTo(null);
         setVisible(true);
     }

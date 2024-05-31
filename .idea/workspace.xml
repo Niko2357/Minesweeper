@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="04495222-66f1-4158-b315-49bb017cfa54" name="Changes" comment="better layout and design but didnt work so just renamed file">
+    <list default="true" id="04495222-66f1-4158-b315-49bb017cfa54" name="Changes" comment="index is no longer needed">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flags/Cyan_Flower.png" beforeDir="false" afterPath="$PROJECT_DIR$/Flags/Cyan_Flower.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Floor/Obsidian.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Floor/Obsidian.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Floor/TNT.png" beforeDir="false" afterPath="$PROJECT_DIR$/Floor/TNT.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Floor/dirt.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Floor/dirt.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Floor/grass.png" beforeDir="false" afterPath="$PROJECT_DIR$/Floor/grass.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ButtonWorks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ButtonWorks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ImageClickListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ImageClickListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SelectFlag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SelectFlag.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Visual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Visual.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,55 +86,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1713165154160</updated>
-    </task>
-    <task id="LOCAL-00057" summary="setting values of SIZE and MINES">
-      <created>1717002997715</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1717002997715</updated>
-    </task>
-    <task id="LOCAL-00058" summary="changed method winCheck, doesnt work">
-      <created>1717005322822</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1717005322822</updated>
-    </task>
-    <task id="LOCAL-00059" summary="flowers as flags for flag button">
-      <created>1717005348026</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1717005348026</updated>
-    </task>
-    <task id="LOCAL-00060" summary="deleted revealCells, using different method for checkWin(), adding menu bar with back to main menu function">
-      <created>1717009076225</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1717009076225</updated>
-    </task>
-    <task id="LOCAL-00061" summary="deleted revealCells">
-      <created>1717009093502</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1717009093502</updated>
-    </task>
-    <task id="LOCAL-00062" summary="disposing game window after losing">
-      <created>1717009205701</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1717009205701</updated>
-    </task>
-    <task id="LOCAL-00063" summary="disposing game window after winning">
-      <created>1717009267855</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1717009267855</updated>
     </task>
     <task id="LOCAL-00064" summary="plus menu bar with other buttons">
       <created>1717011069148</created>
@@ -421,7 +381,56 @@
       <option name="project" value="LOCAL" />
       <updated>1717146081663</updated>
     </task>
-    <option name="localTasksCounter" value="106" />
+    <task id="LOCAL-00106" summary="mistake in spelling">
+      <created>1717146993416</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1717146993416</updated>
+    </task>
+    <task id="LOCAL-00107" summary="grass buttons">
+      <created>1717147009705</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1717147009705</updated>
+    </task>
+    <task id="LOCAL-00108" summary="deleted useless import">
+      <created>1717149541784</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1717149541785</updated>
+    </task>
+    <task id="LOCAL-00109" summary="useless method and hashMap">
+      <created>1717149635755</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1717149635756</updated>
+    </task>
+    <task id="LOCAL-00110" summary="new class for selecting flag design">
+      <created>1717157830701</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1717157830701</updated>
+    </task>
+    <task id="LOCAL-00111" summary="supporting class of SelectFlag">
+      <created>1717157847762</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1717157847762</updated>
+    </task>
+    <task id="LOCAL-00112" summary="index is no longer needed">
+      <created>1717158691333</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1717158691333</updated>
+    </task>
+    <option name="localTasksCounter" value="113" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -436,13 +445,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="trying out hint" />
-    <MESSAGE value="trying out different layout" />
-    <MESSAGE value="some file moving and renaming" />
-    <MESSAGE value="setting icon of window, some images" />
-    <MESSAGE value="setting icon" />
-    <MESSAGE value="changed location" />
-    <MESSAGE value="had to move files out of src, cause they dont work there for some reason" />
     <MESSAGE value="field filled with grass" />
     <MESSAGE value="deleted" />
     <MESSAGE value="another main menu images" />
@@ -461,6 +463,13 @@
     <MESSAGE value="background and size" />
     <MESSAGE value="some edits" />
     <MESSAGE value="better layout and design but didnt work so just renamed file" />
-    <option name="LAST_COMMIT_MESSAGE" value="better layout and design but didnt work so just renamed file" />
+    <MESSAGE value="mistake in spelling" />
+    <MESSAGE value="grass buttons" />
+    <MESSAGE value="deleted useless import" />
+    <MESSAGE value="useless method and hashMap" />
+    <MESSAGE value="new class for selecting flag design" />
+    <MESSAGE value="supporting class of SelectFlag" />
+    <MESSAGE value="index is no longer needed" />
+    <option name="LAST_COMMIT_MESSAGE" value="index is no longer needed" />
   </component>
 </project>

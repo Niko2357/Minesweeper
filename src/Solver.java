@@ -33,7 +33,7 @@ public class Solver {
                         if(closeMines == closeFlags){
                             revealMines(i, j);
                         }else if(closeMines == closeHidden + closeFlags){
-                            revealF(i, j);
+                            edges(i, j);
                         }
                     }
                 }
@@ -106,7 +106,7 @@ public class Solver {
      * @param row
      * @param column
      */
-    public void revealF(int row, int column) {
+    public void edges(int row, int column) {
         for (int i = -1; i <= 1; i++) {
             for (int j = -1; j <= 1; j++) {
                 int r = row + i;

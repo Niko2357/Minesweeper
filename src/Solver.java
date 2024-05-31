@@ -19,6 +19,9 @@ public class Solver {
         solve();
     }
 
+    /**
+     * Computer tries to solve the game.
+     */
     public void solve(){
         while(!visual.lostGame() && !visual.wonGame()){
             for (int i = 0; i < rows; i++) {
@@ -38,6 +41,12 @@ public class Solver {
         }
     }
 
+    /**
+     * Counts number of mines around a cell.
+     * @param row
+     * @param column
+     * @return
+     */
    public int countCloseM(int row, int column){
         int count = 0;
        for (int i = -1; i <= 1; i++) {
@@ -52,6 +61,12 @@ public class Solver {
        return count;
    }
 
+    /**
+     * Count flags around a cell.
+     * @param row
+     * @param column
+     * @return
+     */
    public int countCloseF(int row, int column){
         int count = 0;
         for(int i = -1; i <=1; i ++){
@@ -66,6 +81,12 @@ public class Solver {
         return count;
    }
 
+    /**
+     * Counts hidden cells around.
+     * @param row
+     * @param column
+     * @return
+     */
     public int countHidden(int row, int column) {
         int count = 0;
         for (int i = -1; i <= 1; i++) {
@@ -80,15 +101,20 @@ public class Solver {
         return count;
     }
 
-    public void revealMines(int row, int column) {
+    /**
+     * Checks if the cell is on the edge of the board.
+     * @param row
+     * @param column
+     */
+    public void revealF(int row, int column) {
         for (int i = -1; i <= 1; i++) {
             for (int j = -1; j <= 1; j++) {
                 int r = row + i;
                 int c = column + j;
-                    if (r >= 0 && c >= 0 && r < rows && c < columns && buttons[r][c].getText().equals("") && !did[r][c]) {
+                    if (r >= 0 && c >= 0 && r < rows && c < columns && buttons[r][c].getIcon().equals(visual.grass) && !did[r][c]) {
                         did[r][c] = true;
                         buttons[r][c].doClick();
-                        if(buttons[r][c].getText().equals("0")){
+                        if(buttons[r][c].getIcon().equals(visual.flag)){
                             revealMines(r, c);
                         }
                 }
@@ -96,14 +122,18 @@ public class Solver {
         }
     }
 
-    public void revealF(int row, int column) {
+    /**
+     * Should reveal all mines on board.
+     * @param row
+     * @param column
+     */
+    public void revealMines(int row, int column) {
         for (int i = -1; i <= 1; i++) {
             for (int j = -1; j <= 1; j++) {
                 int r = row + i;
                 int c = column + j;
-                if (r >= 0 && c >= 0 && r < rows && c < columns && buttons[r][c].isEnabled() && buttons[r][c].getText().equals("")) {
-                    buttons[r][c].setText("F");
-                    buttons[r][c].setBackground(Color.RED);
+                if (r >= 0 && c >= 0 && r < rows && c < columns && buttons[r][c].isEnabled() && buttons[r][c].getIcon().equals(visual.grass)) {
+                    buttons[r][c].setIcon(visual.TNT);
                     visual.foundMines++;
                 }
             }

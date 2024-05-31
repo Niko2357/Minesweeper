@@ -22,5 +22,13 @@ If there's a -. It means there are no mines around.
 In this case we can tell, that box 10 is definitely safe. Because of - next to it.
 We mark mines with 🚩 and if you click on a mine it explodes 💥.
 
+These are the rules of classical Minesweeper. But in this game, there are a few differences.
+Here, you do not mark mines with flags but with flowers. However, let’s call it flags.
+And we could say we do not mark mines but TNT bombs.
+
+Regarding hints, if you need a hint, you can get one but for something in return.
+It would be too easy. So, when you want a hint, you can use a hint button.
+The cell without a TNT will change into obsidian. Which means more work, because you have to press ten times to break the obsidian.
+
 The goal in this game is to find all the mines and not to trigger one.
 Good luck!😊

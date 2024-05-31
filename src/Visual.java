@@ -82,9 +82,9 @@ public class Visual extends JFrame {
         gridPanel.setLayout(new GridLayout(SIZE, SIZE));
         add(gridPanel, BorderLayout.CENTER);
 
-        //ImageIcon grass = new ImageIcon("Floor/grass.png");
+        ImageIcon grass = new ImageIcon("Floor/grass.png");
 
-        makeButtons(gridPanel/*, grass*/);
+        makeButtons(gridPanel, grass);
         placeMine();
         setVisible(true);
     }
@@ -93,12 +93,12 @@ public class Visual extends JFrame {
     /**
      * Builds the board of this game with buttons.
      */
-    public void makeButtons(JPanel gridPanel/*, ImageIcon icon*/) {
+    public void makeButtons(JPanel gridPanel, ImageIcon icon) {
         for (int i = 0; i < SIZE; i++) {
             for (int j = 0; j < SIZE; j++) {
                 JButton button = new JButton();
                 button.setPreferredSize(new Dimension(40, 40));
-                /*button.setIcon(/*icon);*/
+                button.setIcon(icon);
                 button.setBorderPainted(false);
                 button.setContentAreaFilled(false);
                 button.setFocusPainted(false);

@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="04495222-66f1-4158-b315-49bb017cfa54" name="Changes" comment="some edits">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Instructions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Instructions.java" afterDir="false" />
+    <list default="true" id="04495222-66f1-4158-b315-49bb017cfa54" name="Changes" comment="better layout and design but didnt work so just renamed file">
+      <change beforePath="$PROJECT_DIR$/src/Visual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Visual.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,13 +77,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1713165154160</updated>
-    </task>
-    <task id="LOCAL-00056" summary="deleted values of size and mines">
-      <created>1717002939778</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1717002939778</updated>
     </task>
     <task id="LOCAL-00057" summary="setting values of SIZE and MINES">
       <created>1717002997715</created>
@@ -422,7 +414,14 @@
       <option name="project" value="LOCAL" />
       <updated>1717105386496</updated>
     </task>
-    <option name="localTasksCounter" value="105" />
+    <task id="LOCAL-00105" summary="better layout and design but didnt work so just renamed file">
+      <created>1717146081663</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1717146081663</updated>
+    </task>
+    <option name="localTasksCounter" value="106" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -437,7 +436,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="another if for hints to not be so easy to get(I know its long)" />
     <MESSAGE value="trying out hint" />
     <MESSAGE value="trying out different layout" />
     <MESSAGE value="some file moving and renaming" />
@@ -462,6 +460,7 @@
     <MESSAGE value="new class for background image of selectDiff class" />
     <MESSAGE value="background and size" />
     <MESSAGE value="some edits" />
-    <option name="LAST_COMMIT_MESSAGE" value="some edits" />
+    <MESSAGE value="better layout and design but didnt work so just renamed file" />
+    <option name="LAST_COMMIT_MESSAGE" value="better layout and design but didnt work so just renamed file" />
   </component>
 </project>

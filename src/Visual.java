@@ -17,7 +17,6 @@ public class Visual extends JFrame {
     protected boolean lost;
     protected boolean won;
     protected Difficulty difficulty;
-    protected HashMap<Difficulty, Integer> assignedValues = new HashMap<>();
     protected Hint hint;
     ImageIcon TNT;
 
@@ -25,7 +24,6 @@ public class Visual extends JFrame {
         this.difficulty = difficulty;
         this.SIZE = difficulty.getSize();
         this.MINES = difficulty.getMines();
-        addingToMap();
 
         setTitle("TNT Sweeper");
         setSize(1000, 1000);
@@ -182,17 +180,6 @@ public class Visual extends JFrame {
                 revealEmpty(row + theRow, column + theColumn);
             }
         }
-    }
-
-    /**
-     * Adds values to the HashMap.
-     */
-    public void addingToMap(){
-        assignedValues.put(Difficulty.EASY, 1);
-        assignedValues.put(Difficulty.MEDIUM, 2);
-        assignedValues.put(Difficulty.HARD, 3);
-        assignedValues.put(Difficulty.GENIUS, 4);
-        assignedValues.put(Difficulty.IMPOSSIBLE, 5);
     }
 
     /**

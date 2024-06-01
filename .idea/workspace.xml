@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="04495222-66f1-4158-b315-49bb017cfa54" name="Changes" comment="deleted">
+    <list default="true" id="04495222-66f1-4158-b315-49bb017cfa54" name="Changes" comment="broke down long constructor into methods cause it doesnt work this way">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Box.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flags/Peony_aka_Paeonia.png" beforeDir="false" afterPath="$PROJECT_DIR$/Flags/Peony_aka_Paeonia.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Floor/TNT.png" beforeDir="false" afterPath="$PROJECT_DIR$/Floor/TNT.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minesweeper.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ButtonWorks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ButtonWorks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Field.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ImageClickListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ImageClickListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Intro.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Location.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SelectFlag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SelectFlag.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Visual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Visual.java" afterDir="false" />
@@ -24,6 +22,7 @@
       <list>
         <option value="Enum" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -43,12 +42,20 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "D:/Nikolka_skola/Programování/Java/JFormDesigner-8.1.1-intellij-idea.zip",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "create.test.in.the.same.root": "true",
+    "last_opened_file_path": "D:/Nikolka_skola/Programování/Java/Zaver_TNTSweeper",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
@@ -64,8 +71,17 @@
       <recent name="D:\Nikolka_skola\Programování\Java\Zaver_TNTSweeper\Minesweeper\src" />
       <recent name="D:\Nikolka_skola\Programování\Java\Zaver_TNTSweeper\Minesweeper\src\Floor" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Minesweeper" />
@@ -73,9 +89,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MenuTest.testMine" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Minesweeper" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MenuTest" />
+      <option name="METHOD_NAME" value="testMine" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.MenuTest.testMine" />
       </list>
     </recent_temporary>
   </component>
@@ -87,55 +114,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1713165154160</updated>
-    </task>
-    <task id="LOCAL-00077" summary="another if for hints to not be so easy to get(I know its long)">
-      <created>1717069136069</created>
-      <option name="number" value="00077" />
-      <option name="presentableId" value="LOCAL-00077" />
-      <option name="project" value="LOCAL" />
-      <updated>1717069136070</updated>
-    </task>
-    <task id="LOCAL-00078" summary="trying out hint">
-      <created>1717069159224</created>
-      <option name="number" value="00078" />
-      <option name="presentableId" value="LOCAL-00078" />
-      <option name="project" value="LOCAL" />
-      <updated>1717069159224</updated>
-    </task>
-    <task id="LOCAL-00079" summary="trying out different layout">
-      <created>1717074111589</created>
-      <option name="number" value="00079" />
-      <option name="presentableId" value="LOCAL-00079" />
-      <option name="project" value="LOCAL" />
-      <updated>1717074111589</updated>
-    </task>
-    <task id="LOCAL-00080" summary="some file moving and renaming">
-      <created>1717082235938</created>
-      <option name="number" value="00080" />
-      <option name="presentableId" value="LOCAL-00080" />
-      <option name="project" value="LOCAL" />
-      <updated>1717082235939</updated>
-    </task>
-    <task id="LOCAL-00081" summary="setting icon of window, some images">
-      <created>1717082484712</created>
-      <option name="number" value="00081" />
-      <option name="presentableId" value="LOCAL-00081" />
-      <option name="project" value="LOCAL" />
-      <updated>1717082484712</updated>
-    </task>
-    <task id="LOCAL-00082" summary=".">
-      <created>1717082495559</created>
-      <option name="number" value="00082" />
-      <option name="presentableId" value="LOCAL-00082" />
-      <option name="project" value="LOCAL" />
-      <updated>1717082495559</updated>
-    </task>
-    <task id="LOCAL-00083" summary="setting icon">
-      <created>1717082511295</created>
-      <option name="number" value="00083" />
-      <option name="presentableId" value="LOCAL-00083" />
-      <option name="project" value="LOCAL" />
-      <updated>1717082511295</updated>
     </task>
     <task id="LOCAL-00084" summary="setting icon">
       <created>1717082519482</created>
@@ -431,7 +409,56 @@
       <option name="project" value="LOCAL" />
       <updated>1717179071373</updated>
     </task>
-    <option name="localTasksCounter" value="126" />
+    <task id="LOCAL-00126" summary=".">
+      <created>1717184462746</created>
+      <option name="number" value="00126" />
+      <option name="presentableId" value="LOCAL-00126" />
+      <option name="project" value="LOCAL" />
+      <updated>1717184462746</updated>
+    </task>
+    <task id="LOCAL-00127" summary=".">
+      <created>1717184469187</created>
+      <option name="number" value="00127" />
+      <option name="presentableId" value="LOCAL-00127" />
+      <option name="project" value="LOCAL" />
+      <updated>1717184469187</updated>
+    </task>
+    <task id="LOCAL-00128" summary=".">
+      <created>1717184485202</created>
+      <option name="number" value="00128" />
+      <option name="presentableId" value="LOCAL-00128" />
+      <option name="project" value="LOCAL" />
+      <updated>1717184485202</updated>
+    </task>
+    <task id="LOCAL-00129" summary=".">
+      <created>1717184491386</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1717184491386</updated>
+    </task>
+    <task id="LOCAL-00130" summary="deleted">
+      <created>1717184501596</created>
+      <option name="number" value="00130" />
+      <option name="presentableId" value="LOCAL-00130" />
+      <option name="project" value="LOCAL" />
+      <updated>1717184501596</updated>
+    </task>
+    <task id="LOCAL-00131" summary="audio files">
+      <created>1717229081408</created>
+      <option name="number" value="00131" />
+      <option name="presentableId" value="LOCAL-00131" />
+      <option name="project" value="LOCAL" />
+      <updated>1717229081409</updated>
+    </task>
+    <task id="LOCAL-00132" summary="broke down long constructor into methods cause it doesnt work this way">
+      <created>1717229116690</created>
+      <option name="number" value="00132" />
+      <option name="presentableId" value="LOCAL-00132" />
+      <option name="project" value="LOCAL" />
+      <updated>1717229116691</updated>
+    </task>
+    <option name="localTasksCounter" value="133" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -446,8 +473,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="deleted to reveal mines as X" />
-    <MESSAGE value="renamed class" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="new class for background image of selectDiff class" />
     <MESSAGE value="background and size" />
     <MESSAGE value="some edits" />
@@ -464,13 +490,15 @@
     <MESSAGE value="added new property class SelectFlag and event" />
     <MESSAGE value="new name for a file" />
     <MESSAGE value="added obsidian image" />
-    <MESSAGE value="." />
     <MESSAGE value="added few lines of text" />
     <MESSAGE value="comments" />
     <MESSAGE value="adjusted size" />
     <MESSAGE value="change of name" />
     <MESSAGE value="change of size" />
+    <MESSAGE value="." />
     <MESSAGE value="deleted" />
-    <option name="LAST_COMMIT_MESSAGE" value="deleted" />
+    <MESSAGE value="audio files" />
+    <MESSAGE value="broke down long constructor into methods cause it doesnt work this way" />
+    <option name="LAST_COMMIT_MESSAGE" value="broke down long constructor into methods cause it doesnt work this way" />
   </component>
 </project>

@@ -1,12 +1,14 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.MouseEvent;
 
 public class SelectFlag extends JFrame {
-    protected String[] flags = {"Flags/Allium.png", "Flags/Blue_Orchid.png", "Flags/Cyan_Flower.png", "Flags/Dandelion.png","Flags/Lilac.png", "Flags/Orange_Tulip.png",
+    protected static String[] flags = {"Flags/Allium.png", "Flags/Blue_Orchid.png", "Flags/Cyan_Flower.png", "Flags/Dandelion.png","Flags/Lilac.png", "Flags/Orange_Tulip.png",
             "Flags/Peony_aka_Paeonia.png", "Flags/Poppy.png", "Flags/Rose_Bush.png"};
     protected String[] labels = {"Allium", "Blue Orchid", "Cyan Flower", "Dandelion", "Lilac", "Orange Tulip", "Peony", "Poppy", "Rose Bush"};
 
     static String chosenFlag;
+    JButton confirm;
     public SelectFlag(){
         setTitle("Select Flag");
         setSize(800, 990);

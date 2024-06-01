@@ -17,6 +17,7 @@ public class Visual extends JFrame {
     protected Difficulty difficulty;
     protected Hint hint;
     ImageIcon TNT;
+    protected String selectedImage = "Flags/Poppy.png";
 
     ImageIcon flag = new ImageIcon("Flags/Poppy.png");
     ImageIcon dirt = new ImageIcon("Floor/dirt.jpg");
@@ -68,7 +69,6 @@ public class Visual extends JFrame {
             winCheck();
         });
 
-        ImageClickListener.flagsChosen.add("Flags/Lilac.png");
         menu.add(item1);
         menu.add(item2);
         menu.add(item3);
@@ -89,7 +89,6 @@ public class Visual extends JFrame {
         setVisible(true);
     }
 
-
     /**
      * Builds the board of this game with buttons.
      */
@@ -103,8 +102,10 @@ public class Visual extends JFrame {
                 button.setContentAreaFilled(false);
                 button.setFocusPainted(false);
                 button.setOpaque(false);
+                button.setBackground(Color.DARK_GRAY);
                 button.setMargin(new Insets(0, 0, 0, 0));
-                button.addActionListener(new ButtonWorks(i, j, this));
+                ButtonWorks buttonWorks = new ButtonWorks(i, j, this);
+                button.addActionListener(buttonWorks);
                 buttons[i][j] = button;
                 gridPanel.add(button);
             }

@@ -1,8 +1,11 @@
+import javax.sound.sampled.*;
 import javax.swing.*;
 import java.awt.*;
+import java.io.File;
+import java.io.IOException;
 
 public class SelectDiff extends JFrame {
-    public SelectDiff(){
+    public SelectDiff() throws LineUnavailableException, IOException, UnsupportedAudioFileException {
         setTitle("Difficulty Selection");
         setSize(800, 550);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -20,24 +23,71 @@ public class SelectDiff extends JFrame {
         JButton genius = new JButton("Genius");
         JButton impossible = new JButton("Impossible");
 
+        File wiiTheme = new File("Audio/Wii Theme.wav");
+        AudioInputStream inputStream = AudioSystem.getAudioInputStream(wiiTheme);
+        Clip clip1 = AudioSystem.getClip();
+        clip1.open(inputStream);
+
+
+
         easy.addActionListener(e -> {
-            new Visual(Difficulty.EASY);
+            try {
+                new Visual(Difficulty.EASY);
+            } catch (LineUnavailableException ex) {
+                throw new RuntimeException(ex);
+            } catch (IOException ex) {
+                throw new RuntimeException(ex);
+            } catch (UnsupportedAudioFileException ex) {
+                throw new RuntimeException(ex);
+            }
             dispose();
         });
         medium.addActionListener(e ->{
-            new Visual(Difficulty.MEDIUM);
+            try {
+                new Visual(Difficulty.MEDIUM);
+            } catch (LineUnavailableException ex) {
+                throw new RuntimeException(ex);
+            } catch (IOException ex) {
+                throw new RuntimeException(ex);
+            } catch (UnsupportedAudioFileException ex) {
+                throw new RuntimeException(ex);
+            }
             dispose();
         });
         hard.addActionListener(e ->{
-            new Visual(Difficulty.HARD);
+            try {
+                new Visual(Difficulty.HARD);
+            } catch (LineUnavailableException ex) {
+                throw new RuntimeException(ex);
+            } catch (IOException ex) {
+                throw new RuntimeException(ex);
+            } catch (UnsupportedAudioFileException ex) {
+                throw new RuntimeException(ex);
+            }
             dispose();
         });
         genius.addActionListener(e -> {
-            new Visual(Difficulty.GENIUS);
+            try {
+                new Visual(Difficulty.GENIUS);
+            } catch (LineUnavailableException ex) {
+                throw new RuntimeException(ex);
+            } catch (IOException ex) {
+                throw new RuntimeException(ex);
+            } catch (UnsupportedAudioFileException ex) {
+                throw new RuntimeException(ex);
+            }
             dispose();
         });
         impossible.addActionListener(e -> {
-            new Visual(Difficulty.IMPOSSIBLE);
+            try {
+                new Visual(Difficulty.IMPOSSIBLE);
+            } catch (LineUnavailableException ex) {
+                throw new RuntimeException(ex);
+            } catch (IOException ex) {
+                throw new RuntimeException(ex);
+            } catch (UnsupportedAudioFileException ex) {
+                throw new RuntimeException(ex);
+            }
             dispose();
         });
 

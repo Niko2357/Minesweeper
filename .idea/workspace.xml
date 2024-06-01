@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="04495222-66f1-4158-b315-49bb017cfa54" name="Changes" comment="." />
+    <list default="true" id="04495222-66f1-4158-b315-49bb017cfa54" name="Changes" comment="from mp3 to wav">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Audio/achievment.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Audio/villager.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ButtonWorks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ButtonWorks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Instructions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Instructions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SelectDiff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SelectDiff.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Visual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Visual.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -104,27 +114,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1713165154160</updated>
-    </task>
-    <task id="LOCAL-00087" summary="had to move files out of src, cause they dont work there for some reason">
-      <created>1717088279337</created>
-      <option name="number" value="00087" />
-      <option name="presentableId" value="LOCAL-00087" />
-      <option name="project" value="LOCAL" />
-      <updated>1717088279337</updated>
-    </task>
-    <task id="LOCAL-00088" summary="field filled with grass">
-      <created>1717088316682</created>
-      <option name="number" value="00088" />
-      <option name="presentableId" value="LOCAL-00088" />
-      <option name="project" value="LOCAL" />
-      <updated>1717088316682</updated>
-    </task>
-    <task id="LOCAL-00089" summary="deleted">
-      <created>1717096976725</created>
-      <option name="number" value="00089" />
-      <option name="presentableId" value="LOCAL-00089" />
-      <option name="project" value="LOCAL" />
-      <updated>1717096976725</updated>
     </task>
     <task id="LOCAL-00090" summary="another main menu images">
       <created>1717096997002</created>
@@ -448,7 +437,28 @@
       <option name="project" value="LOCAL" />
       <updated>1717241429622</updated>
     </task>
-    <option name="localTasksCounter" value="136" />
+    <task id="LOCAL-00136" summary="useless import">
+      <created>1717241711602</created>
+      <option name="number" value="00136" />
+      <option name="presentableId" value="LOCAL-00136" />
+      <option name="project" value="LOCAL" />
+      <updated>1717241711602</updated>
+    </task>
+    <task id="LOCAL-00137" summary="deleted">
+      <created>1717242078549</created>
+      <option name="number" value="00137" />
+      <option name="presentableId" value="LOCAL-00137" />
+      <option name="project" value="LOCAL" />
+      <updated>1717242078549</updated>
+    </task>
+    <task id="LOCAL-00138" summary="from mp3 to wav">
+      <created>1717244710452</created>
+      <option name="number" value="00138" />
+      <option name="presentableId" value="LOCAL-00138" />
+      <option name="project" value="LOCAL" />
+      <updated>1717244710452</updated>
+    </task>
+    <option name="localTasksCounter" value="139" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -464,8 +474,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="background and size" />
-    <MESSAGE value="some edits" />
     <MESSAGE value="better layout and design but didnt work so just renamed file" />
     <MESSAGE value="mistake in spelling" />
     <MESSAGE value="grass buttons" />
@@ -484,11 +492,13 @@
     <MESSAGE value="adjusted size" />
     <MESSAGE value="change of name" />
     <MESSAGE value="change of size" />
-    <MESSAGE value="deleted" />
     <MESSAGE value="audio files" />
     <MESSAGE value="broke down long constructor into methods cause it doesnt work this way" />
     <MESSAGE value="didnt work" />
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="useless import" />
+    <MESSAGE value="deleted" />
+    <MESSAGE value="from mp3 to wav" />
+    <option name="LAST_COMMIT_MESSAGE" value="from mp3 to wav" />
   </component>
 </project>

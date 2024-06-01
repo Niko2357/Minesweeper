@@ -1,20 +1,31 @@
+import javax.sound.sampled.*;
 import javax.swing.*;
 import javax.swing.Box;
 import java.awt.*;
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 public class Menu extends JFrame {
+    public Clip clip1;
     protected BackgroundBorder backgroundBorderImage;
     protected Timer time;
     protected ArrayList<Image> backgroundImages;
     protected int curImage;
 
-    public Menu() {
+    public Menu() throws LineUnavailableException, IOException, UnsupportedAudioFileException {
         setTitle("TNT Sweeper");
         setSize(900, 800);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         ImageIcon icon = new ImageIcon("Menus/MainMenu5.png");
         setIconImage(icon.getImage());
+
+        File wiiTheme = new File("Audio/Wii Theme.wav");
+        AudioInputStream inputStream = AudioSystem.getAudioInputStream(wiiTheme);
+        clip1 = AudioSystem.getClip();
+        clip1.open(inputStream);
+        clip1.stop();
+        clip1.start();
 
         backgroundImages = new ArrayList<>();
         backgroundImages.add(new ImageIcon("Menus/MainMenu1.jpg").getImage());
@@ -71,11 +82,22 @@ public class Menu extends JFrame {
         quitButton.setContentAreaFilled(false);
 
         playButton.addActionListener(e -> {
-            new SelectDiff();
+            clip1.stop();
+            try {
+                new SelectDiff();
+            } catch (LineUnavailableException ex) {
+                throw new RuntimeException(ex);
+            } catch (IOException ex) {
+                throw new RuntimeException(ex);
+            } catch (UnsupportedAudioFileException ex) {
+                throw new RuntimeException(ex);
+            }
             this.dispose();
         });
 
-        howToPlayButton.addActionListener(e -> new Instructions());
+        howToPlayButton.addActionListener(e -> {
+            new Instructions(this);
+        });
         quitButton.addActionListener(e -> System.exit(0));
 
         mainPanel.add(Box.createVerticalGlue());

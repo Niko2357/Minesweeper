@@ -1,5 +1,8 @@
+import javax.sound.sampled.*;
 import javax.swing.*;
 import java.awt.*;
+import java.io.File;
+import java.io.IOException;
 import java.util.Random;
 import javax.swing.ImageIcon;
 
@@ -17,14 +20,13 @@ public class Visual extends JFrame {
     protected Difficulty difficulty;
     protected Hint hint;
     ImageIcon TNT;
-    protected String selectedImage = "Flags/Poppy.png";
 
     ImageIcon flag = new ImageIcon("Flags/Poppy.png");
     ImageIcon dirt = new ImageIcon("Floor/dirt.jpg");
     ImageIcon grass = new ImageIcon("Floor/grass.png");
     ImageIcon obsidian = new ImageIcon("Floor/Obsidian.jpg");
 
-    public Visual(Difficulty difficulty) {
+    public Visual(Difficulty difficulty) throws LineUnavailableException, IOException, UnsupportedAudioFileException {
         this.difficulty = difficulty;
         this.SIZE = difficulty.getSize();
         this.MINES = difficulty.getMines();
@@ -37,6 +39,11 @@ public class Visual extends JFrame {
         ImageIcon icon = new ImageIcon("Menus/MainMenu5.png");
         setIconImage(icon.getImage());
         TNT = new ImageIcon("Floor/TNT.png");
+
+        File wiiTheme = new File("Audio/Wii Theme.wav");
+        AudioInputStream inputStream = AudioSystem.getAudioInputStream(wiiTheme);
+        Clip clip1 = AudioSystem.getClip();
+        clip1.open(inputStream);
 
         buttons = new JButton[SIZE][SIZE];
         mines = new boolean[SIZE][SIZE];
@@ -56,7 +63,16 @@ public class Visual extends JFrame {
         JMenu menu = new JMenu("Menu");
         JMenuItem item1 = new JMenuItem("Back to Main menu");
         item1.addActionListener(ac -> {
-            new Menu();
+            try {
+                clip1.start();
+                new Menu();
+            } catch (LineUnavailableException e) {
+                throw new RuntimeException(e);
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            } catch (UnsupportedAudioFileException e) {
+                throw new RuntimeException(e);
+            }
             dispose();
         });
         JMenuItem item2 = new JMenuItem("Flag choice");
@@ -66,7 +82,15 @@ public class Visual extends JFrame {
         JMenuItem item3 = new JMenuItem("Semi-Solve");
         item3.addActionListener(ac -> {
             new Solver(this);
-            winCheck();
+            try {
+                winCheck();
+            } catch (UnsupportedAudioFileException e) {
+                throw new RuntimeException(e);
+            } catch (LineUnavailableException e) {
+                throw new RuntimeException(e);
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
         });
 
         menu.add(item1);
@@ -92,7 +116,7 @@ public class Visual extends JFrame {
     /**
      * Builds the board of this game with buttons.
      */
-    public void makeButtons(JPanel gridPanel, ImageIcon icon) {
+    public void makeButtons(JPanel gridPanel, ImageIcon icon) throws UnsupportedAudioFileException, LineUnavailableException, IOException {
         for (int i = 0; i < SIZE; i++) {
             for (int j = 0; j < SIZE; j++) {
                 JButton button = new JButton();
@@ -192,7 +216,7 @@ public class Visual extends JFrame {
     /**
      * This method checks whether player won. Player can achieve that by he marks all mines and reveals all cells.
      */
-    public void winCheck(){
+    public void winCheck() throws UnsupportedAudioFileException, LineUnavailableException, IOException {
         int allCells = SIZE * SIZE;
         int notMineCells = allCells - MINES;
         if(allCells - MINES == notMineCells && foundMines == MINES){
@@ -204,7 +228,7 @@ public class Visual extends JFrame {
     /**
      * Carries on the message of winning a game and leads player to the menu.
      */
-    public void win(){
+    public void win() throws UnsupportedAudioFileException, LineUnavailableException, IOException {
         won = true;
         int option = JOptionPane.showOptionDialog(this, "You have won!!!", "Winner",
                 JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE, null, new Object[]{"Play again", "Menu"}, null);

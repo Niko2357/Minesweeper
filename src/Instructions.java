@@ -1,3 +1,5 @@
+import javax.sound.sampled.LineUnavailableException;
+import javax.sound.sampled.UnsupportedAudioFileException;
 import javax.swing.*;
 import java.awt.*;
 import java.io.BufferedReader;
@@ -7,7 +9,8 @@ import java.net.URI;
 import java.net.URISyntaxException;
 
 public class Instructions extends JFrame {
-    public Instructions(){
+    Menu mainMenu;
+    public Instructions(Menu mainMenu){
         setTitle("How to play");
         setSize(1000, 1000);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -19,7 +22,17 @@ public class Instructions extends JFrame {
         JMenu menu = new JMenu("Menu");
         JMenuItem item = new JMenuItem("Back to Main menu");
         item.addActionListener(e -> {
-            new Menu();
+            try {
+                mainMenu.dispose();
+                mainMenu.clip1.stop();
+                new Menu();
+            } catch (LineUnavailableException ex) {
+                throw new RuntimeException(ex);
+            } catch (IOException ex) {
+                throw new RuntimeException(ex);
+            } catch (UnsupportedAudioFileException ex) {
+                throw new RuntimeException(ex);
+            }
             this.dispose();
         });
         JMenuItem item2 = new JMenuItem("I still don't understand");

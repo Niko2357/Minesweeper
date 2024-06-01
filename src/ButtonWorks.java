@@ -1,7 +1,10 @@
+import javax.sound.sampled.*;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.File;
+import java.io.IOException;
 
 public class ButtonWorks implements ActionListener {
     private int row;
@@ -15,24 +18,85 @@ public class ButtonWorks implements ActionListener {
     ImageIcon obsidian = new ImageIcon("Floor/Obsidian.jpg");
     ImageIcon grass = new ImageIcon("Floor/grass.png");
 
-    public ButtonWorks(int row, int column, Visual visual) {
+    public ButtonWorks(int row, int column, Visual visual) throws UnsupportedAudioFileException, IOException, LineUnavailableException {
         this.row = row;
         this.column = column;
         this.visual = visual;
     }
     int clickCount = 10;
 
+    File dirtClip = new File("Audio/dirt.wav");
+    AudioInputStream inputStream = null;
+    Clip clip2 = null;
+    File explosion = new File("Audio/TNT_explosion.wav");
+    AudioInputStream inputStream1 = null;
+    Clip clip3 = null;
     /**
      * Gets signal from button of the board and starts other methods under some conditions.
      * @param e the event to be processed
      */
     @Override
     public void actionPerformed(ActionEvent e){
+        try {
+            inputStream = AudioSystem.getAudioInputStream(dirtClip);
+        } catch (UnsupportedAudioFileException ex) {
+            throw new RuntimeException(ex);
+        } catch (IOException ex) {
+            throw new RuntimeException(ex);
+        }
+        try {
+            clip2 = AudioSystem.getClip();
+        } catch (LineUnavailableException ex) {
+            throw new RuntimeException(ex);
+        }
+        try {
+            clip2.open(inputStream);
+        } catch (LineUnavailableException ex) {
+            throw new RuntimeException(ex);
+        } catch (IOException ex) {
+            throw new RuntimeException(ex);
+        }
+        try {
+            inputStream1 = AudioSystem.getAudioInputStream(explosion);
+        } catch (UnsupportedAudioFileException ex) {
+            throw new RuntimeException(ex);
+        } catch (IOException ex) {
+            throw new RuntimeException(ex);
+        }
+        try {
+            clip3 = AudioSystem.getClip();
+        } catch (LineUnavailableException ex) {
+            throw new RuntimeException(ex);
+        }
+        try {
+            clip3.open(inputStream1);
+        } catch (LineUnavailableException ex) {
+            throw new RuntimeException(ex);
+        } catch (IOException ex) {
+            throw new RuntimeException(ex);
+        }
         JButton button = (JButton) e.getSource();
         if(button.getIcon().equals(obsidian)){
-            obsidianBlock(button);
+            try {
+                obsidianBlock(button);
+            } catch (UnsupportedAudioFileException ex) {
+                throw new RuntimeException(ex);
+            } catch (LineUnavailableException ex) {
+                throw new RuntimeException(ex);
+            } catch (IOException ex) {
+                throw new RuntimeException(ex);
+            }
         }else{
-            normalBlock(button);
+            try {
+                clip2.start();
+                normalBlock(button);
+            } catch (UnsupportedAudioFileException ex) {
+                throw new RuntimeException(ex);
+            } catch (LineUnavailableException ex) {
+                throw new RuntimeException(ex);
+            } catch (IOException ex) {
+                throw new RuntimeException(ex);
+            }
         }
     }
 
@@ -40,7 +104,7 @@ public class ButtonWorks implements ActionListener {
      * Handles hint block.
      * @param button
      */
-    public void obsidianBlock(JButton button){
+    public void obsidianBlock(JButton button) throws UnsupportedAudioFileException, LineUnavailableException, IOException {
         if(visual.flagMode){
             flagMode(button);
         }else{
@@ -57,7 +121,7 @@ public class ButtonWorks implements ActionListener {
      * Handles normal grass block.
      * @param button
      */
-    public void normalBlock(JButton button){
+    public void normalBlock(JButton button) throws UnsupportedAudioFileException, LineUnavailableException, IOException {
         if(visual.flagMode){
             flagMode(button);
         }else{
@@ -88,19 +152,21 @@ public class ButtonWorks implements ActionListener {
      * reveals all mine cells if mine is found or calls method from class visual that reveals all empty cells.
      * @param button
      */
-    public void revealCell(JButton button){
+    public void revealCell(JButton button) throws UnsupportedAudioFileException, LineUnavailableException, IOException {
         if(flag.equals(button.getIcon())){
             return;
         }
         if(visual.mines[row][column]){
             button.setIcon(null);
             button.setIcon(TNT);
+            clip3.start();
             visual.revealM();
             visual.lost = true;
             GameOver();
         }else{
             visual.revealEmpty(row, column);
             button.setIcon(null);
+            clip2.start();
             button.setIcon(dirt);
             button.isEnabled();
             int count = visual.count(row, column);
@@ -112,7 +178,7 @@ public class ButtonWorks implements ActionListener {
     /**
      * Handles lost game.
      */
-    public void GameOver(){
+    public void GameOver() throws UnsupportedAudioFileException, LineUnavailableException, IOException {
         int option = JOptionPane.showOptionDialog(visual, "Game over", "You lost", JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE, null, new Object[]{"Play again", "Menu"}, null);
         if(option == 0){
             visual.dispose();

@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="04495222-66f1-4158-b315-49bb017cfa54" name="Changes" comment="didnt work">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="04495222-66f1-4158-b315-49bb017cfa54" name="Changes" comment="." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -106,13 +104,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1713165154160</updated>
-    </task>
-    <task id="LOCAL-00086" summary="had to move files out of src, cause they dont work there for some reason">
-      <created>1717088273242</created>
-      <option name="number" value="00086" />
-      <option name="presentableId" value="LOCAL-00086" />
-      <option name="project" value="LOCAL" />
-      <updated>1717088273242</updated>
     </task>
     <task id="LOCAL-00087" summary="had to move files out of src, cause they dont work there for some reason">
       <created>1717088279337</created>
@@ -450,7 +441,14 @@
       <option name="project" value="LOCAL" />
       <updated>1717240836470</updated>
     </task>
-    <option name="localTasksCounter" value="135" />
+    <task id="LOCAL-00135" summary=".">
+      <created>1717241429622</created>
+      <option name="number" value="00135" />
+      <option name="presentableId" value="LOCAL-00135" />
+      <option name="project" value="LOCAL" />
+      <updated>1717241429622</updated>
+    </task>
+    <option name="localTasksCounter" value="136" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -489,8 +487,8 @@
     <MESSAGE value="deleted" />
     <MESSAGE value="audio files" />
     <MESSAGE value="broke down long constructor into methods cause it doesnt work this way" />
-    <MESSAGE value="." />
     <MESSAGE value="didnt work" />
-    <option name="LAST_COMMIT_MESSAGE" value="didnt work" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
 </project>

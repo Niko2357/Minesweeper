@@ -1,5 +1,4 @@
 import javax.swing.*;
-import java.awt.*;
 public class Hint {
     protected Visual visual;
     public Hint(Visual visual){

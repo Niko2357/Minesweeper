@@ -1,16 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="04495222-66f1-4158-b315-49bb017cfa54" name="Changes" comment="broke down long constructor into methods cause it doesnt work this way">
+    <list default="true" id="04495222-66f1-4158-b315-49bb017cfa54" name="Changes" comment="didnt work">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flags/Peony_aka_Paeonia.png" beforeDir="false" afterPath="$PROJECT_DIR$/Flags/Peony_aka_Paeonia.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Floor/TNT.png" beforeDir="false" afterPath="$PROJECT_DIR$/Floor/TNT.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Minesweeper.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ButtonWorks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ButtonWorks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ImageClickListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ImageClickListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SelectFlag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SelectFlag.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Visual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Visual.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,20 +106,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1713165154160</updated>
-    </task>
-    <task id="LOCAL-00084" summary="setting icon">
-      <created>1717082519482</created>
-      <option name="number" value="00084" />
-      <option name="presentableId" value="LOCAL-00084" />
-      <option name="project" value="LOCAL" />
-      <updated>1717082519482</updated>
-    </task>
-    <task id="LOCAL-00085" summary="changed location">
-      <created>1717082548496</created>
-      <option name="number" value="00085" />
-      <option name="presentableId" value="LOCAL-00085" />
-      <option name="project" value="LOCAL" />
-      <updated>1717082548496</updated>
     </task>
     <task id="LOCAL-00086" summary="had to move files out of src, cause they dont work there for some reason">
       <created>1717088273242</created>
@@ -458,7 +436,21 @@
       <option name="project" value="LOCAL" />
       <updated>1717229116691</updated>
     </task>
-    <option name="localTasksCounter" value="133" />
+    <task id="LOCAL-00133" summary=".">
+      <created>1717240794718</created>
+      <option name="number" value="00133" />
+      <option name="presentableId" value="LOCAL-00133" />
+      <option name="project" value="LOCAL" />
+      <updated>1717240794719</updated>
+    </task>
+    <task id="LOCAL-00134" summary="didnt work">
+      <created>1717240836470</created>
+      <option name="number" value="00134" />
+      <option name="presentableId" value="LOCAL-00134" />
+      <option name="project" value="LOCAL" />
+      <updated>1717240836470</updated>
+    </task>
+    <option name="localTasksCounter" value="135" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -474,7 +466,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="new class for background image of selectDiff class" />
     <MESSAGE value="background and size" />
     <MESSAGE value="some edits" />
     <MESSAGE value="better layout and design but didnt work so just renamed file" />
@@ -495,10 +486,11 @@
     <MESSAGE value="adjusted size" />
     <MESSAGE value="change of name" />
     <MESSAGE value="change of size" />
-    <MESSAGE value="." />
     <MESSAGE value="deleted" />
     <MESSAGE value="audio files" />
     <MESSAGE value="broke down long constructor into methods cause it doesnt work this way" />
-    <option name="LAST_COMMIT_MESSAGE" value="broke down long constructor into methods cause it doesnt work this way" />
+    <MESSAGE value="." />
+    <MESSAGE value="didnt work" />
+    <option name="LAST_COMMIT_MESSAGE" value="didnt work" />
   </component>
 </project>

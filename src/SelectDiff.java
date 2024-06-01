@@ -33,11 +33,7 @@ public class SelectDiff extends JFrame {
         easy.addActionListener(e -> {
             try {
                 new Visual(Difficulty.EASY);
-            } catch (LineUnavailableException ex) {
-                throw new RuntimeException(ex);
-            } catch (IOException ex) {
-                throw new RuntimeException(ex);
-            } catch (UnsupportedAudioFileException ex) {
+            } catch (LineUnavailableException | IOException | UnsupportedAudioFileException ex) {
                 throw new RuntimeException(ex);
             }
             dispose();
@@ -45,11 +41,7 @@ public class SelectDiff extends JFrame {
         medium.addActionListener(e ->{
             try {
                 new Visual(Difficulty.MEDIUM);
-            } catch (LineUnavailableException ex) {
-                throw new RuntimeException(ex);
-            } catch (IOException ex) {
-                throw new RuntimeException(ex);
-            } catch (UnsupportedAudioFileException ex) {
+            } catch (LineUnavailableException | IOException | UnsupportedAudioFileException ex) {
                 throw new RuntimeException(ex);
             }
             dispose();
@@ -57,11 +49,7 @@ public class SelectDiff extends JFrame {
         hard.addActionListener(e ->{
             try {
                 new Visual(Difficulty.HARD);
-            } catch (LineUnavailableException ex) {
-                throw new RuntimeException(ex);
-            } catch (IOException ex) {
-                throw new RuntimeException(ex);
-            } catch (UnsupportedAudioFileException ex) {
+            } catch (LineUnavailableException | IOException | UnsupportedAudioFileException ex) {
                 throw new RuntimeException(ex);
             }
             dispose();
@@ -69,11 +57,7 @@ public class SelectDiff extends JFrame {
         genius.addActionListener(e -> {
             try {
                 new Visual(Difficulty.GENIUS);
-            } catch (LineUnavailableException ex) {
-                throw new RuntimeException(ex);
-            } catch (IOException ex) {
-                throw new RuntimeException(ex);
-            } catch (UnsupportedAudioFileException ex) {
+            } catch (LineUnavailableException | IOException | UnsupportedAudioFileException ex) {
                 throw new RuntimeException(ex);
             }
             dispose();
@@ -81,11 +65,7 @@ public class SelectDiff extends JFrame {
         impossible.addActionListener(e -> {
             try {
                 new Visual(Difficulty.IMPOSSIBLE);
-            } catch (LineUnavailableException ex) {
-                throw new RuntimeException(ex);
-            } catch (IOException ex) {
-                throw new RuntimeException(ex);
-            } catch (UnsupportedAudioFileException ex) {
+            } catch (LineUnavailableException | IOException | UnsupportedAudioFileException ex) {
                 throw new RuntimeException(ex);
             }
             dispose();

@@ -85,11 +85,7 @@ public class Menu extends JFrame {
             clip1.stop();
             try {
                 new SelectDiff();
-            } catch (LineUnavailableException ex) {
-                throw new RuntimeException(ex);
-            } catch (IOException ex) {
-                throw new RuntimeException(ex);
-            } catch (UnsupportedAudioFileException ex) {
+            } catch (LineUnavailableException | IOException | UnsupportedAudioFileException ex) {
                 throw new RuntimeException(ex);
             }
             this.dispose();
@@ -118,6 +114,9 @@ public class Menu extends JFrame {
         setVisible(true);
     }
 
+    /**
+     * Method switches image in Main menu.
+     */
     public void switchImage(){
         curImage = (curImage + 1) % backgroundImages.size();
         backgroundBorderImage.setBackgroundImage(backgroundImages.get(curImage));

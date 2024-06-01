@@ -24,7 +24,6 @@ public class Visual extends JFrame {
     ImageIcon flag = new ImageIcon("Flags/Poppy.png");
     ImageIcon dirt = new ImageIcon("Floor/dirt.jpg");
     ImageIcon grass = new ImageIcon("Floor/grass.png");
-    ImageIcon obsidian = new ImageIcon("Floor/Obsidian.jpg");
 
     public Visual(Difficulty difficulty) throws LineUnavailableException, IOException, UnsupportedAudioFileException {
         this.difficulty = difficulty;
@@ -66,11 +65,7 @@ public class Visual extends JFrame {
             try {
                 clip1.start();
                 new Menu();
-            } catch (LineUnavailableException e) {
-                throw new RuntimeException(e);
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            } catch (UnsupportedAudioFileException e) {
+            } catch (LineUnavailableException | UnsupportedAudioFileException | IOException e) {
                 throw new RuntimeException(e);
             }
             dispose();
@@ -84,11 +79,7 @@ public class Visual extends JFrame {
             new Solver(this);
             try {
                 winCheck();
-            } catch (UnsupportedAudioFileException e) {
-                throw new RuntimeException(e);
-            } catch (LineUnavailableException e) {
-                throw new RuntimeException(e);
-            } catch (IOException e) {
+            } catch (UnsupportedAudioFileException | IOException | LineUnavailableException e) {
                 throw new RuntimeException(e);
             }
         });

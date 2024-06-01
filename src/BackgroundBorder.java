@@ -16,6 +16,10 @@ public class BackgroundBorder extends JPanel {
         }
     }
 
+    /**
+     * Displays another image.
+     * @param background
+     */
     public void setBackgroundImage(Image background){
         this.background = background;
         repaint();

@@ -1,20 +1,19 @@
 import javax.sound.sampled.*;
 import javax.swing.*;
-import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
 import java.io.IOException;
 
 public class ButtonWorks implements ActionListener {
-    private int row;
-    private int column;
-    private Visual visual;
+    private final int row;
+    private final int column;
+    private final Visual visual;
 
     ImageIcon dirt = new ImageIcon("Floor/dirt.jpg");
     ImageIcon TNT = new ImageIcon("Floor/TNT.png");
 
-    ImageIcon flag = new ImageIcon("Flags/Peony_aka_Paeonia.png");
+    ImageIcon flag = new ImageIcon("Flags/Poppy.png");
     ImageIcon obsidian = new ImageIcon("Floor/Obsidian.jpg");
     ImageIcon grass = new ImageIcon("Floor/grass.png");
 
@@ -39,9 +38,7 @@ public class ButtonWorks implements ActionListener {
     public void actionPerformed(ActionEvent e){
         try {
             inputStream = AudioSystem.getAudioInputStream(dirtClip);
-        } catch (UnsupportedAudioFileException ex) {
-            throw new RuntimeException(ex);
-        } catch (IOException ex) {
+        } catch (UnsupportedAudioFileException | IOException ex) {
             throw new RuntimeException(ex);
         }
         try {
@@ -51,16 +48,12 @@ public class ButtonWorks implements ActionListener {
         }
         try {
             clip2.open(inputStream);
-        } catch (LineUnavailableException ex) {
-            throw new RuntimeException(ex);
-        } catch (IOException ex) {
+        } catch (LineUnavailableException | IOException ex) {
             throw new RuntimeException(ex);
         }
         try {
             inputStream1 = AudioSystem.getAudioInputStream(explosion);
-        } catch (UnsupportedAudioFileException ex) {
-            throw new RuntimeException(ex);
-        } catch (IOException ex) {
+        } catch (UnsupportedAudioFileException | IOException ex) {
             throw new RuntimeException(ex);
         }
         try {
@@ -70,31 +63,21 @@ public class ButtonWorks implements ActionListener {
         }
         try {
             clip3.open(inputStream1);
-        } catch (LineUnavailableException ex) {
-            throw new RuntimeException(ex);
-        } catch (IOException ex) {
+        } catch (LineUnavailableException | IOException ex) {
             throw new RuntimeException(ex);
         }
         JButton button = (JButton) e.getSource();
         if(button.getIcon().equals(obsidian)){
             try {
                 obsidianBlock(button);
-            } catch (UnsupportedAudioFileException ex) {
-                throw new RuntimeException(ex);
-            } catch (LineUnavailableException ex) {
-                throw new RuntimeException(ex);
-            } catch (IOException ex) {
+            } catch (UnsupportedAudioFileException | IOException | LineUnavailableException ex) {
                 throw new RuntimeException(ex);
             }
         }else{
             try {
                 clip2.start();
                 normalBlock(button);
-            } catch (UnsupportedAudioFileException ex) {
-                throw new RuntimeException(ex);
-            } catch (LineUnavailableException ex) {
-                throw new RuntimeException(ex);
-            } catch (IOException ex) {
+            } catch (UnsupportedAudioFileException | LineUnavailableException | IOException ex) {
                 throw new RuntimeException(ex);
             }
         }
@@ -176,7 +159,7 @@ public class ButtonWorks implements ActionListener {
     }
 
     /**
-     * Handles lost game.
+     * Handles lost game. Shows message and options, what to do next.
      */
     public void GameOver() throws UnsupportedAudioFileException, LineUnavailableException, IOException {
         int option = JOptionPane.showOptionDialog(visual, "Game over", "You lost", JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE, null, new Object[]{"Play again", "Menu"}, null);

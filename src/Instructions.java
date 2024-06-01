@@ -9,7 +9,6 @@ import java.net.URI;
 import java.net.URISyntaxException;
 
 public class Instructions extends JFrame {
-    Menu mainMenu;
     public Instructions(Menu mainMenu){
         setTitle("How to play");
         setSize(1000, 1000);
@@ -26,11 +25,7 @@ public class Instructions extends JFrame {
                 mainMenu.dispose();
                 mainMenu.clip1.stop();
                 new Menu();
-            } catch (LineUnavailableException ex) {
-                throw new RuntimeException(ex);
-            } catch (IOException ex) {
-                throw new RuntimeException(ex);
-            } catch (UnsupportedAudioFileException ex) {
+            } catch (LineUnavailableException | IOException | UnsupportedAudioFileException ex) {
                 throw new RuntimeException(ex);
             }
             this.dispose();

@@ -8,6 +8,9 @@ public class Hint {
 
     ImageIcon obsidian = new ImageIcon("Floor/Obsidian.jpg");
 
+    /**
+     * Finds a cell on playing board and sets its icon as obsidian block.
+     */
     public void giveAHint(){
         boolean[][] mines = visual.mines;
         JButton[][] buttons = visual.buttons;

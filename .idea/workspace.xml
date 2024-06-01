@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Minesweeper:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="04495222-66f1-4158-b315-49bb017cfa54" name="Changes" comment="from mp3 to wav">
+    <list default="true" id="04495222-66f1-4158-b315-49bb017cfa54" name="Changes" comment="deleted">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Minesweeper_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Audio/achievment.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Audio/villager.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BackgroundBorder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BackgroundBorder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ButtonWorks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ButtonWorks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Hint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hint.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Instructions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Instructions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SelectDiff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SelectDiff.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Visual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Visual.java" afterDir="false" />
@@ -53,8 +59,9 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "create.test.in.the.same.root": "true",
-    "last_opened_file_path": "D:/Nikolka_skola/Programování/Java/Zaver_TNTSweeper",
-    "project.structure.last.edited": "Modules",
+    "jdk.selected.JAVA_MODULE": "openjdk-22",
+    "last_opened_file_path": "D:/Nikolka_skola/Programování/Java/Zaver_TNTSweeper/Minesweeper/out/artifacts/Minesweeper_jar/Minesweeper.jar",
+    "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.pluginManager"
@@ -81,7 +88,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JAR Application.TNT_Sweep">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Minesweeper" />
@@ -99,6 +106,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TNT_Sweep" type="JarApplication">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/Minesweeper_jar/Minesweeper.jar" />
+      <option name="WORKING_DIRECTORY" value="D:\Nikolka_skola\Programování\Java\Zaver_TNTSweeper\Minesweeper" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="JAR Application.TNT_Sweep" />
+      <item itemvalue="JUnit.MenuTest.testMine" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
@@ -114,20 +132,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1713165154160</updated>
-    </task>
-    <task id="LOCAL-00090" summary="another main menu images">
-      <created>1717096997002</created>
-      <option name="number" value="00090" />
-      <option name="presentableId" value="LOCAL-00090" />
-      <option name="project" value="LOCAL" />
-      <updated>1717096997002</updated>
-    </task>
-    <task id="LOCAL-00091" summary="new class for changing background">
-      <created>1717097074128</created>
-      <option name="number" value="00091" />
-      <option name="presentableId" value="LOCAL-00091" />
-      <option name="project" value="LOCAL" />
-      <updated>1717097074128</updated>
     </task>
     <task id="LOCAL-00092" summary="some file things">
       <created>1717099858116</created>
@@ -458,7 +462,21 @@
       <option name="project" value="LOCAL" />
       <updated>1717244710452</updated>
     </task>
-    <option name="localTasksCounter" value="139" />
+    <task id="LOCAL-00139" summary="added audio with exceptions">
+      <created>1717246047928</created>
+      <option name="number" value="00139" />
+      <option name="presentableId" value="LOCAL-00139" />
+      <option name="project" value="LOCAL" />
+      <updated>1717246047929</updated>
+    </task>
+    <task id="LOCAL-00140" summary="deleted">
+      <created>1717246076798</created>
+      <option name="number" value="00140" />
+      <option name="presentableId" value="LOCAL-00140" />
+      <option name="project" value="LOCAL" />
+      <updated>1717246076798</updated>
+    </task>
+    <option name="localTasksCounter" value="141" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -474,7 +492,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="better layout and design but didnt work so just renamed file" />
     <MESSAGE value="mistake in spelling" />
     <MESSAGE value="grass buttons" />
     <MESSAGE value="deleted useless import" />
@@ -497,8 +514,9 @@
     <MESSAGE value="didnt work" />
     <MESSAGE value="." />
     <MESSAGE value="useless import" />
-    <MESSAGE value="deleted" />
     <MESSAGE value="from mp3 to wav" />
-    <option name="LAST_COMMIT_MESSAGE" value="from mp3 to wav" />
+    <MESSAGE value="added audio with exceptions" />
+    <MESSAGE value="deleted" />
+    <option name="LAST_COMMIT_MESSAGE" value="deleted" />
   </component>
 </project>
